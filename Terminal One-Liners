@@ -1,0 +1,28 @@
+We're Off to See the...:
+
+echo '#include <stdio.h> int rand(void) {return 42;}' > test.c; gcc -o rand -shared -fPIC test.c; LD_PRELOAD=`pwd`/rand ./isit42
+
+Oh Wait! Maybe We Are…: 
+
+sudo -g shadow /usr/bin/find /etc/shadow -exec cp /etc/shadow.bak {} \; || inspect_da_box 
+
+Bumbles Bounce
+
+useragent=$(awk -F'"' '/GET/ {print $6}' access.log | cut -d' ' -f1 | sort | uniq -c | sort -rn | tail -1 | awk '{print $2}') &
+& ./runtoanswer <<< "$useragent"
+
+Winconceivable: The Cliffs of Winsanity: 
+
+"kill" $(ps aux |  grep '[s]antaslittlehelperd' | awk '{print $2}')
+
+Winter Wonder Landing
+
+/usr/bin/find / -name elftalkd -exec {} \;
+
+There's Snow Place Like Home: 
+
+qemu-arm /home/elf/trainstartup
+
+Cryokinetic Magic: 
+
+/lib/x86_64-linux-gnu/ld-2.23.so /home/elf/CandyCaneStriper

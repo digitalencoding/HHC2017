@@ -1,0 +1,17 @@
+sqlite> .schema 
+
+CREATE TABLE songs(
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  title TEXT,
+  artist TEXT,
+  year TEXT,
+  notes TEXT
+);
+CREATE TABLE likes(
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  like INTEGER,
+  datetime INTEGER,
+  songid INTEGER,
+  FOREIGN KEY(songid) REFERENCES songs(id)
+);
+

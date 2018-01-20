@@ -1,0 +1,60 @@
+perm_identity  From: alabaster.snowball@northpolechristmastown.com
+person_pin  To: "jessica.claus@northpolechristmastown.com" <jessica.claus@northpolechristmastown.com
+today  Date/Time: Wed, 15 Nov 2017 13:04:03 -0500
+subject  Subject: gingerbread cookie recipe
+message  Message Body: 
+
+Hey Mrs Claus,
+
+Do you have that awesome gingerbread cookie recipe you made for me last 
+year? You sent it in a MS word .docx file. I would totally open that 
+docx on my computer if you had that. I would click on anything with the 
+words gingerbread cookie recipe in it. I'm totally addicted and want to 
+make some more.
+
+Thanks,
+Alabaster Snowball
+
+
+
+perm_identity  From: alabaster.snowball@northpolechristmastown.com
+person_pin  To: all@northpolechristmastown.com
+today  Date/Time: Wed, 15 Nov 2017 14:45:19 -0500
+subject  Subject: Re: Should we be worried?
+message  Message Body: 
+
+Quit worrying Minty,
+
+You have nothing to worry about with me around! I have developed most of 
+the applications in our network including our network defenses. We are 
+are completely secure and impenetrable.
+
+Sincerely,
+
+Alabaster Snowball.
+
+
+On 11/15/2017 2:41 PM, minty.candycane@northpolechristmastown.com wrote:
+Hey Alabaster,
+
+You know I'm a novice security enthusiast, well I saw an article a 
+while ago about regarding DDE exploits that dont need macros for MS 
+word to get command execution.
+
+https://sensepost.com/blog/2017/macro-less-code-exec-in-msword/
+
+Should we be worried about this?
+
+I tried it on my local machine and was able to transfer a file. Here's 
+a poc:
+
+http://mail.northpolechristmastown.com/attachments/dde_exmaple_minty_candycane.png 
+
+
+I know your the resident computer engineer here so I wanted to defer to the expert.
+
+:)
+
+-Minty CandyCane.
+
+

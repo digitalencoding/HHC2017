@@ -1,0 +1,485 @@
+Winconceivable: The Cliffs of Winsanity: "kill" $(ps aux |  grep '[s]antaslittlehelperd' | awk '{print $2}')
+
+                ___,@ 
+               /  <
+          ,_  /    \  _,
+      ?    \`/______\`/
+   ,_(_).  |; (e  e) ;|
+    \___ \ \/\   7  /\/    _\8/_
+        \/\   \'=='/      | /| /|
+         \ \___)--(_______|//|//|
+          \___  ()  _____/|/_|/_|
+             /  ()  \    `----'
+            /   ()   \
+           '-.______.-'
+   jgs   _    |_||_|    _
+        (@____) || (____@)
+         \______||______/
+My name is Sparkle Redberry, and I need your help.
+My server is atwist, and I fear I may yelp.
+Help me kill the troublesome process gone awry.
+I will return the favor with a gift before nigh.
+Kill the "santaslittlehelperd" process to complete this challenge.
+
+
+elf@c454f133ce8f:~$ ps aux
+USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+elf          1  0.1  0.0  18028  2788 pts/0    Ss   06:49   0:00 /bin/bash /sbin/init
+elf          8  0.0  0.0   4224   628 pts/0    S    06:49   0:00 /usr/bin/santaslittlehelperd
+elf         11  0.4  0.0  13528  6344 pts/0    S    06:49   0:00 /sbin/kworker
+elf         12  0.0  0.0  18248  3200 pts/0    S    06:49   0:00 /bin/bash
+elf         18  1.9  0.0  71468 26632 pts/0    S    06:49   0:00 /sbin/kworker
+elf         40  0.0  0.0  34424  2752 pts/0    R+   06:49   0:00 ps aux
+
+elf@c454f133ce8f:~$ alias
+
+alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s
+/[;&|]\s*alert$//'\'')"'
+alias egrep='egrep --color=auto'
+alias fgrep='fgrep --color=auto'
+alias grep='grep --color=auto'
+alias kill='true'
+alias killall='true'
+alias l='ls -CF'
+alias la='ls -A'
+alias ll='ls -alF'
+alias ls='ls --color=auto'
+alias pkill='true'
+alias skill='true'
+
+elf@c454f133ce8f:~$ "kill" -9 8
+
+elf@c454f133ce8f:~$ ps aux
+USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+elf          1  0.0  0.0  18028  2788 pts/0    Ss   06:49   0:00 /bin/bash /sbin/init
+elf         12  0.0  0.0  18248  3320 pts/0    S    06:49   0:00 /bin/bash
+elf         57  0.0  0.0  34424  2876 pts/0    R+   06:50   0:00 ps aux
+
+_________________________________________________________________________________________________________________________________
+
+Cryokinetic Magic: /lib/x86_64-linux-gnu/ld-2.23.so /home/elf/CandyCaneStriper
+
+                     ___
+                    / __'.     .-"""-.
+              .-""-| |  '.'.  / .---. \
+             / .--. \ \___\ \/ /____| |
+            / /    \ `-.-;-(`_)_____.-'._
+           ; ;      `.-" "-:_,(o:==..`-. '.         .-"-,
+           | |      /       \ /      `\ `. \       / .-. \
+           \ \     |         Y    __...\  \ \     / /   \/
+     /\     | |    | .--""--.| .-'      \  '.`---' /
+     \ \   / /     |`        \'   _...--.;   '---'`
+      \ '-' / jgs  /_..---.._ \ .'\\_     `.
+       `--'`      .'    (_)  `'/   (_)     /
+                  `._       _.'|         .'
+                     ```````    '-...--'`
+My name is Holly Evergreen, and I have a conundrum.
+I broke the candy cane striper, and I'm near throwing a tantrum.
+Assembly lines have stopped since the elves can't get their candy cane fix.
+We hope you can start the striper once again, with your vast bag of tricks.
+Run the CandyCaneStriper executable to complete this challenge.
+
+elf@8d05544aa95e:~$ ls
+CandyCaneStriper
+elf@8d05544aa95e:~$ file CandyCaneStriper 
+CandyCaneStriper: ELF 64-bit LSB executable, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, for GNU/
+Linux 2.6.32, BuildID[sha1]=bfe4ffd88f30e6970feb7e3341ddbe579e9ab4b3, stripped
+
+elf@8d05544aa95e:~$ /lib/x86_64-linux-gnu/ld-2.23.so /home/elf/CandyCaneStriper 
+                   _..._
+                 .'\\ //`,      
+                /\\.'``'.=",
+               / \/     ;==|
+              /\\/    .'\`,`
+             / \/     `""`
+            /\\/
+           /\\/
+          /\ /
+         /\\/
+        /`\/
+        \\/
+         `
+The candy cane striping machine is up and running!
+_________________________________________________________________________________________________________________________________
+
+There's Snow Place Like Home: qemu-arm /home/elf/trainstartup
+
+                             ______
+                          .-"""".._'.       _,##
+                   _..__ |.-"""-.|  |   _,##'`-._
+                  (_____)||_____||  |_,##'`-._,##'`
+                  _|   |.;-""-.  |  |#'`-._,##'`
+               _.;_ `--' `\    \ |.'`\._,##'`
+              /.-.\ `\     |.-";.`_, |##'`
+              |\__/   | _..;__  |'-' /
+              '.____.'_.-`)\--' /'-'`
+               //||\\(_.-'_,'-'`
+             (`-...-')_,##'`
+      jgs _,##`-..,-;##`
+       _,##'`-._,##'`
+    _,##'`-._,##'`
+      `-._,##'`
+My name is Pepper Minstix, and I need your help with my plight.
+I've crashed the Christmas toy train, for which I am quite contrite.
+I should not have interfered, hacking it was foolish in hindsight.
+If you can get it running again, I will reward you with a gift of delight.
+total 444
+-rwxr-xr-x 1 root root 454636 Dec  7 18:43 trainstartup
+elf@8c13ca7d5245:~$ file trainstartup 
+trainstartup: ELF 32-bit LSB  executable, ARM, EABI5 version 1 (GNU/Linux), statically linked, for GNU/Linux 3.2.0, BuildID[sha1]=005de4685e
+8563d10b3de3e0be7d6fdd7ed732eb, not stripped
+elf@8c13ca7d5245:~$ uname -a
+Linux 8c13ca7d5245 4.9.0-4-amd64 #1 SMP Debian 4.9.65-3 (2017-12-03) x86_64 x86_64 x86_64 GNU/Linux
+elf@8c13ca7d5245:~$ qemu-arm /home/elf/trainstartup
+                             ______
+                          .-"""".._'.       _,##
+                   _..__ |.-"""-.|  |   _,##'`-._
+                  (_____)||_____||  |_,##'`-._,##'`
+    Merry Christmas
+    Merry Christmas
+v
+>*<
+^
+/o\
+/   \               @.·
+/~~   \                .
+/ ° ~~  \         · .    
+/      ~~ \       ◆  ·    
+/     °   ~~\    ·     0
+/~~           \   .─··─ · o
+             /°  ~~  .*· · . \  ├──┼──┤                                        
+              │  ──┬─°─┬─°─°─°─ └──┴──┘                                        
+≠==≠==≠==≠==──┼──=≠     ≠=≠==≠==≠==≠==≠==≠==≠==≠==≠==≠==≠==≠==≠==≠==≠==≠==≠===≠
+              │   /└───┘\┌───┐       ┌┐                                        
+                         └───┘    /▒▒▒▒                                        
+≠==≠==≠==≠==≠==≠==≠==≠==≠==≠==≠==≠=°≠=°≠==≠==≠==≠==≠==≠==≠==≠==≠==≠==≠==≠==≠==≠
+
+You did it! Thank you!
+
+elf@8c13ca7d5245:~$ 
+
+
+_________________________________________________________________________________________________________________________________
+
+Winter Wonder Landing: /usr/bin/find / -name elftalkd -exec {} \;
+
+                              \ ' /
+                             -- (*) --
+                                >*<
+                               >0<@<
+                              >>>@<<*
+                             >@>*<0<<<
+                            >*>>@<<<@<<
+                           >@>>0<<<*<<@<
+                          >*>>0<<@<<<@<<<
+                         >@>>*<<@<>*<<0<*<
+           \*/          >0>>*<<@<>0><<*<@<<
+       ___\\U//___     >*>>@><0<<*>>@><*<0<<
+       |\\ | | \\|    >@>>0<*<0>>@<<0<<<*<@<<  
+       | \\| | _(UU)_ >((*))_>0><*<0><@<<<0<*<
+       |\ \| || / //||.*.*.*.|>>@<<*<<@>><0<<<
+       |\\_|_|&&_// ||*.*.*.*|_\\db//_               
+       """"|'.'.'.|~~|.*.*.*|     ____|_
+           |'.'.'.|   ^^^^^^|____|>>>>>>|
+           ~~~~~~~~         '""""`------'
+My name is Bushy Evergreen, and I have a problem for you.
+I think a server got owned, and I can only offer a clue.
+We use the system for chat, to keep toy production running.
+Can you help us recover from the server connection shunning?
+Find and run the elftalkd binary to complete this challenge.
+
+elf@410b837df852:~$ find / -name elftalkd
+bash: /usr/local/bin/find: cannot execute binary file: Exec format error
+elf@410b837df852:~$ /usr/bin/find / -name elftalkd
+/usr/bin/find: '/var/cache/ldconfig': Permission denied
+/usr/bin/find: '/var/cache/apt/archives/partial': Permission denied
+/usr/bin/find: '/var/lib/apt/lists/partial': Permission denied
+
+/run/elftalk/bin/elftalkd
+
+/usr/bin/find: '/proc/tty/driver': Permission denied
+/usr/bin/find: '/root': Permission denied
+elf@410b837df852:~$ cd /run/elftalk/bin
+elf@410b837df852:/run/elftalk/bin$ ./elftalkd
+
+        Running in interactive mode
+
+        --== Initializing elftalkd ==--
+Initializing Messaging System!
+Nice-O-Meter configured to 0.90 sensitivity.
+Acquiring messages from local networks...
+
+
+--== Initialization Complete ==--
+
+      _  __ _        _ _       _ 
+     | |/ _| |      | | |     | |
+  ___| | |_| |_ __ _| | | ____| |
+ / _ \ |  _| __/ _` | | |/ / _` |
+|  __/ | | | || (_| | |   < (_| |
+ \___|_|_|  \__\__,_|_|_|\_\__,_|
+
+-*> elftalkd! <*-
+Version 9000.1 (Build 31337) 
+By Santa Claus & The Elf Team
+Copyright (C) 2017 NotActuallyCopyrighted. No actual rights reserved.
+Using libc6 version 2.23-0ubuntu9
+LANG=en_US.UTF-8
+Timezone=UTC
+
+Commencing Elf Talk Daemon (pid=6021)... done!
+Background daemon...
+
+
+_________________________________________________________________________________________________________________________________
+
+Bumbles Bounce: ua=$(awk -F'"' '/GET/ {print $6}' access.log | cut -d' ' -f1 | sort | uniq -c | sort -rn | tail -1 | awk '{print $2}') &
+& ./runtoanswer <<< "$ua"
+
+                          ._    _.
+                           (_)  (_)                  <> \  / <>
+                            .\::/.                   \_\/  \/_/ 
+           .:.          _.=._\\//_.=._                  \\//
+      ..   \o/   ..      '=' //\\ '='             _<>_\_\<>/_/_<>_
+      :o|   |   |o:         '/::\'                 <> / /<>\ \ <>
+       ~ '. ' .' ~         (_)  (_)      _    _       _ //\\ _
+           >O<             '      '     /_/  \_\     / /\  /\ \
+       _ .' . '. _                        \\//       <> /  \ <>
+      :o|   |   |o:                   /\_\\><//_/\
+      ''   /o\   ''     '.|  |.'      \/ //><\\ \/
+           ':'        . ~~\  /~~ .       _//\\_
+jgs                   _\_._\/_._/_      \_\  /_/ 
+                       / ' /\ ' \                   \o/
+       o              ' __/  \__ '              _o/.:|:.\o_
+  o    :    o         ' .'|  |'.                  .\:|:/.
+    '.\'/.'                 .                 -=>>::>o<::<<=-
+    :->@<-:                 :                   _ '/:|:\' _
+    .'/.\'.           '.___/*\___.'              o\':|:'/o 
+  o    :    o           \* \ / */                   /o\
+       o                 >--X--<
+                        /*_/ \_*\
+                      .'   \*/   '.
+                            :
+                            '
+Minty Candycane here, I need your help straight away.
+We're having an argument about browser popularity stray.
+Use the supplied log file from our server in the North Pole.
+Identifying the least-popular browser is your noteworthy goal.
+
+total 28704
+-rw-r--r-- 1 root root 24191488 Dec  4 17:11 access.log
+-rwxr-xr-x 1 root root  5197336 Dec 11 17:31 runtoanswer
+
+elf@a5a8fe96673e:~$ sed -n 's!.* "GET.* "\([[:alnum:].]\+/*[[:digit:].]*\)[^"]*"$!\1!p' access.log | sort | uniq -c | sort -rfg
+  96554 Mozilla/5.0
+    422 Slack
+    353 Mozilla/4.0
+     34 Googlebot
+     25 ZmEu
+     16 slack/2.47.1.7358
+     13 slack/2.47.0.7352
+     12 sysscan/1.0
+     11 facebookexternalhit/1.1
+     11 Wget
+      8 ltx71
+      8 Slack/370354
+      7 Slack/370342
+      4 slack/2.46.0.7100
+      4 Python
+      3 null
+      3 Slack/370136
+      3 MobileSafari/604.1
+      3 GarlikCrawler/1.2
+      2 masscan/1.0
+      2 WhatWeb/0.4.9
+      2 WhatWeb/0.4.8
+      2 Twitterbot/1.0
+      2 Twitter/7.11.1
+      2 Telesphoreo
+      2 Slackbot
+      2 Slack/370007
+      1 www.probethenet.com
+      1 curl/7.35.0
+      1 curl/7.19.7
+      1 Dillo/3.0.5
+
+_________________________________________________________________________________________________________________________________
+
+I Don't Think We're In Kansas Anymore
+
+                      *
+                      .~'
+                     O'~..
+                    ~'O'~..
+                   ~'O'~..~'
+                  O'~..~'O'~.
+                 .~'O'~..~'O'~
+                ..~'O'~..~'O'~.
+               .~'O'~..~'O'~..~'
+              O'~..~'O'~..~'O'~..
+             ~'O'~..~'O'~..~'O'~..
+            ~'O'~..~'O'~..~'O'~..~'
+           O'~..~'O'~..~'O'~..~'O'~.
+          .~'O'~..~'O'~..~'O'~..~'O'~
+         ..~'O'~..~'O'~..~'O'~..~'O'~.
+        .~'O'~..~'O'~..~'O'~..~'O'~..~'
+       O'~..~'O'~..~'O'~..~'O'~..~'O'~..
+      ~'O'~..~'O'~..~'O'~..~'O'~..~'O'~..
+     ~'O'~..~'O'~..~'O'~..~'O'~..~'O'~..~'
+    O'~..~'O'~..~'O'~..~'O'~..~'O'~..~'O'~.
+   .~'O'~..~'O'~..~'O'~..~'O'~..~'O'~..~'O'~
+  ..~'O'~..~'O'~..~'O'~..~'O'~..~'O'~..~'O'~.
+ .~'O'~..~'O'~..~'O'~..~'O'~..~'O'~..~'O'~..~'
+O'~..~'O'~..~'O'~..~'O'~..~'O'~..~'O'~..~'O'~..
+Sugarplum Mary is in a tizzy, we hope you can assist.
+Christmas songs abound, with many likes in our midst.
+The database is populated, ready for you to address.
+Identify the song whose popularity is the best.
+
+-rw-r--r-- 1 root root 15982592 Nov 29 19:28 christmassongs.db
+-rwxr-xr-x 1 root root  5197352 Dec  7 15:10 runtoanswer
+
+elf@31d323c786ab:~$ sqlite3 christmassongs.db 
+SQLite version 3.11.0 2016-02-15 17:29:24
+Enter ".help" for usage hints.
+sqlite> .schema
+CREATE TABLE songs(
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  title TEXT,
+  artist TEXT,
+  year TEXT,
+  notes TEXT
+);
+CREATE TABLE likes(
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  like INTEGER,
+  datetime INTEGER,
+  songid INTEGER,
+  FOREIGN KEY(songid) REFERENCES songs(id)
+);
+
+sqlite> select songid, count (*) from likes where like = '1' group by songid having count (*) >=2 order by count (*) desc LIMIT 1;
+392|8996
+sqlite> select title from songs where id = '392';
+Stairway to Heaven
+
+elf@a4e6732b2edb:~$ runtoanswer
+Starting up, please wait......
+Enter the name of the song with the most likes: Stairway To Heaven
+That is the #1 Christmas song, congratulations!
+
+_________________________________________________________________________________________________________________________________
+
+Oh Wait! Maybe We Are…: sudo -g shadow /usr/bin/find / -name shadow -exec cp /etc/shadow.bak {} \; || inspect_da_box 
+
+              \ /
+            -->*<--
+              /o\
+             /_\_\
+            /_/_0_\
+           /_o_\_\_\
+          /_/_/_/_/o\
+         /@\_\_\@\_\_\
+        /_/_/O/_/_/_/_\
+       /_\_\_\_\_\o\_\_\
+      /_/0/_/_/_0_/_/@/_\
+     /_\_\_\_\_\_\_\_\_\_\
+    /_/o/_/_/@/_/_/o/_/0/_\
+   jgs       [___]  
+My name is Shinny Upatree, and I've made a big mistake.
+I fear it's worse than the time I served everyone bad hake.
+I've deleted an important file, which suppressed my server access.
+I can offer you a gift, if you can fix my ill-fated redress.
+Restore /etc/shadow with the contents of /etc/shadow.bak, then run "inspect_da_b
+ox" to complete this challenge.
+Hint: What commands can you run with sudo?
+
+elf@66960c64db79:~$ sudo -l
+Matching Defaults entries for elf on 66960c64db79:
+    env_reset, mail_badpass, secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin\:/snap/bin
+User elf may run the following commands on 66960c64db79:
+    (elf : shadow) NOPASSWD: /usr/bin/find
+elf@66960c64db79:~$ sudo -g shadow /usr/bin/find / -name shadow -exec cp /etc/shadow.bak {} \;
+
+elf@66960c64db79:~$ inspect_da_box
+                     ___
+                    / __'.     .-"""-.
+              .-""-| |  '.'.  / .---. \
+             / .--. \ \___\ \/ /____| |
+            / /    \ `-.-;-(`_)_____.-'._
+           ; ;      `.-" "-:_,(o:==..`-. '.         .-"-,
+           | |      /       \ /      `\ `. \       / .-. \
+           \ \     |         Y    __...\  \ \     / /   \/
+     /\     | |    | .--""--.| .-'      \  '.`---' /
+     \ \   / /     |`        \'   _...--.;   '---'`
+      \ '-' / jgs  /_..---.._ \ .'\\_     `.
+       `--'`      .'    (_)  `'/   (_)     /
+                  `._       _.'|         .'
+                     ```````    '-...--'`
+/etc/shadow has been successfully restored!
+
+_________________________________________________________________________________________________________________________________
+
+We're Off to See the...
+
+                 .--._.--.--.__.--.--.__.--.--.__.--.--._.--.
+               _(_      _Y_      _Y_      _Y_      _Y_      _)_
+              [___]    [___]    [___]    [___]    [___]    [___]
+              /:' \    /:' \    /:' \    /:' \    /:' \    /:' \
+             |::   |  |::   |  |::   |  |::   |  |::   |  |::   |
+             \::.  /  \::.  /  \::.  /  \::.  /  \::.  /  \::.  /
+         jgs  \::./    \::./    \::./    \::./    \::./    \::./
+               '='      '='      '='      '='      '='      '='
+Wunorse Openslae has a special challenge for you.
+Run the given binary, make it return 42.
+Use the partial source for hints, it is just a clue.
+You will need to write your own code, but only a line or two.
+total 88
+-rwxr-xr-x 1 root root 84824 Dec 16 16:59 isit42
+elf@62d974dc57ad:~$ nano rand.c 
+
+     
+#include <stdio.h>
+int rand(void) {
+printf("muahahaha\n");
+return 42;
+}                  
+
+
+elf@62d974dc57ad:~$ gcc -o rand.so -ldl -shared -fPIC rand.c
+elf@62d974dc57ad:~$ LD_PRELOAD=/home/elf/rand.so ./isit42
+Starting up ... done.
+Calling rand() to select a random number.
+muahahaha
+                 .-. 
+                .;;\ ||           _______  __   __  _______    _______  __    _  _______  _     _  _______  ______ 
+               /::::\|/          |       ||  | |  ||       |  |   _   ||  |  | ||       || | _ | ||       ||    _ |
+              /::::'();          |_     _||  |_|  ||    ___|  |  |_|  ||   |_| ||  _____|| || || ||    ___||   | ||
+            |\/`\:_/`\/|           |   |  |       ||   |___   |       ||       || |_____ |       ||   |___ |   |_||_ 
+        ,__ |0_..().._0| __,       |   |  |       ||    ___|  |       ||  _    ||_____  ||       ||    ___||    __  |
+         \,`////""""\\\\`,/        |   |  |   _   ||   |___   |   _   || | |   | _____| ||   _   ||   |___ |   |  | |
+         | )//_ o  o _\\( |        |___|  |__| |__||_______|  |__| |__||_|  |__||_______||__| |__||_______||___|  |_|
+          \/|(_) () (_)|\/ 
+            \   '()'   /            ______    _______  _______  ___      ___      __   __    ___   _______ 
+            _:.______.;_           |    _ |  |       ||   _   ||   |    |   |    |  | |  |  |   | |       |
+          /| | /`\/`\ | |\         |   | ||  |    ___||  |_|  ||   |    |   |    |  |_|  |  |   | |  _____|
+         / | | \_/\_/ | | \        |   |_||_ |   |___ |       ||   |    |   |    |       |  |   | | |_____ 
+        /  |o`""""""""`o|  \       |    __  ||    ___||       ||   |___ |   |___ |_     _|  |   | |_____  |
+       `.__/     ()     \__.'      |   |  | ||   |___ |   _   ||       ||       |  |   |    |   |  _____| |
+       |  | ___      ___ |  |      |___|  |_||_______||__| |__||_______||_______|  |___|    |___| |_______|
+       /  \|---|    |---|/  \ 
+       |  (|42 | () | DA|)  |       _   ___  _______ 
+       \  /;---'    '---;\  /      | | |   ||       |
+        `` \ ___ /\ ___ / ``       | |_|   ||____   |
+            `|  |  |  |`           |       | ____|  |
+      jgs    |  |  |  |            |___    || ______| ___ 
+       _._  |\|\/||\/|/|  _._          |   || |_____ |   |
+      / .-\ |~~~~||~~~~| /-. \         |___||_______||___|
+      | \__.'    ||    '.__/ |
+       `---------''---------` 
+
+
+Congratulations! You've won, and have successfully completed this challenge.
+-rw-r--r-- 1 root root   654 Dec 16 16:57 isit42.c.un
+
+

